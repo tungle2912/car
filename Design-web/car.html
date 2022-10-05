@@ -26,7 +26,7 @@
                         <li class="nav__item">
                             <!-- start home -->
                             <a href="#" class="nav__item-link">
-                                <span class="nav__item-text">Home</span>
+                                <span class="nav__item-text">Trang chủ</span>
                             </a>
                         </li>
                         <!-- end Home -->
@@ -54,7 +54,7 @@
                                     </li>
                                     <li class="subnav__item">
                                         <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Rolls-Royce</span>
+                                            <span class="subnav__item-text">RollsRoyce</span>
                                         </a>
                                     </li>
                                     <li class="subnav__item">
@@ -71,7 +71,7 @@
                             </div>
                         </li>
                         <!-- start moto -->
-                        <li class="nav__item">
+                        <!-- <li class="nav__item">
                             <a href="" class="nav__item-link">
                                 <span class="nav__item-text">Moto</span>
                             </a>
@@ -105,10 +105,10 @@
                                     
                                 </ul>
                             </div>
-                        </li>
+                        </li> -->
                         <!-- end moto -->
                         <!-- start motobike -->
-                        <li class="nav__item">
+                        <!-- <li class="nav__item">
                             <a href="" class="nav__item-link">
                                 <span class="nav__item-text">Motobike</span>
                             </a>
@@ -137,8 +137,21 @@
                                     
                                 </ul>
                             </div>
-                        </li>
+                        </li> -->
                         <!-- end motobike -->
+
+                        <li class="nav__item">
+                            <a href="" class="nav__item-link">
+                               <span class="nav__item-text">Trả góp</span>
+                            </a>
+                        </li>
+
+
+                        <li class="nav__item">
+                            <a href="" class="nav__item-link">
+                               <span class="nav__item-text">Tin tức</span>
+                            </a>
+                        </li>
                 </ul>
             </div>
                 <!-- end nav -->
@@ -190,15 +203,88 @@
                
         </header>
         <!-- end header -->
+        <div class="slider">
+            <div class="slider__list fade">
+                <img src="./assets/img/slider/slider-2.jpg" alt="" class="slider__img">
+            </div>
 
+            <div class="slider__list fade">
+                <img src="./assets/img/slider/slider-3.jpg" alt="" class="slider__img">
+            </div>
+
+
+
+            <div class="slider__list fade">
+                <img src="./assets/img/slider/slider-4.jpg" alt="" class="slider__img">
+            </div>
+
+
+
+
+
+        </div>
         <div class="container">
 
         </div>
 
         <footer class="footer">
+            <div class="footer__list">
+                <img src="./assets/img/goshop-3.png" alt="" class="footer__img">
+                <p class="footer__text">
+                    Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae
+                </p>
+                <div class="footer__contact">
+                    <div class="contact__item">
+                        <i class=" contact__icon fa-regular fa-envelope"></i>
+                        <a href="" class="contact__text">tkwnhom4@gmail.com</a>
+                    </div>
+
+                    <div class="contact__item">
+                        <i class="contact__icon fa-solid fa-phone"></i>
+                        <a href="" class="contact__text">0339530452</a>
+                    </div>
+
+                    <div class="contact__item">
+                        <i class="contact__icon fa-solid fa-location-dot"></i>
+                        <a href="" class="contact__text">Cầu giấy,Hà Nội</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__list">
+                <div class="footer__item">
+                    <i class="fa-solid fa-car"></i>
+                    <p class="footer__item">
+                        MUA BÁN XE CHÍNH HÃNG
+                    </p>
+
+
+                </div>
+
+
+            </div>
+            
 
 
         </footer>
+
+
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+    
+            function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slider__list");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "flex";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+        </script>
     </div>
     
  </body>
