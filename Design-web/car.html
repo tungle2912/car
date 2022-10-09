@@ -15,7 +15,7 @@
 </head>
 
  <body>
-    <div class="main">
+    < class="main">
         <!-- begin header -->
         <header>
            <div class="logo">
@@ -70,75 +70,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <!-- start moto -->
-                        <!-- <li class="nav__item">
-                            <a href="" class="nav__item-link">
-                                <span class="nav__item-text">Moto</span>
-                            </a>
-                            <div class="subnav">
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Kawasaki</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Honda</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Yamaha</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Suzuki</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Ducati</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                        </li> -->
-                        <!-- end moto -->
-                        <!-- start motobike -->
-                        <!-- <li class="nav__item">
-                            <a href="" class="nav__item-link">
-                                <span class="nav__item-text">Motobike</span>
-                            </a>
-                            <div class="subnav">
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Merida</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Trek</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Kona</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Marin</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                        </li> -->
-                        <!-- end motobike -->
+                     
 
                         <li class="nav__item">
                             <a href="" class="nav__item-link">
@@ -159,14 +91,68 @@
                 <div class="info__container">
                     
                     <!-- start search -->
-                    <div class="info__item">
-                        <i class=" info__icon fa-solid fa-magnifying-glass"></i>
+                    
+                    
+                    <div class="info__search ">
+                        <input type="text" placeholder="Tìm kiếm..." class=" js-search__btn search__input">
+                        <i class=" js-search__btn icon__search fa-solid fa-magnifying-glass"></i>
+
+                        <div class=" js-history search__history">
+                            <div class="search__history-heading">
+                                <h3>Lịch sử tìm kiếm</h3>
+                                <div class="search__history-heading-btn">
+                                    <i class="js-icon__history search__history-heading-icon fa-solid fa-xmark"></i>
+                                </div>
+                                
+                            </div>
+                            <ul class="history__list">
+                                <li class="history__item">
+                                    <a href="" class="history__text">lambogini</a>
+                                </li>
+                                <li class="history__item">
+                                    <a href="" class="history__text">bugati</a>
+                                </li>
+                                <li class="history__item">
+                                    <a href="" class="history__text">ferari</a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+
+
+            
                     </div>
                     <!-- end search -->
 
                      <!-- start notify -->
                      <div class="info__item">
+
                         <i class=" info__icon fa-regular fa-bell"></i>
+
+                        <div class="notify">
+                            <header class="header__notify">
+                             <h3 class="header__notify-text">
+                                Thông báo mới nhận
+                             </h3>
+                            </header>
+                             
+                            <ul class="notify__list">
+                                <li class="notify__item">
+                                    <a href="" class="notify__link">
+                                        <img src="" alt="" class="notify__img">
+                                        <div class="notify__info">
+                                            <span class="notify__name"></span>
+                                            <span class="notify__descriotion"></span>
+                                        </div>
+
+                                    </a>
+                                </li>
+                               
+                            </ul>
+
+
+                        </div>
+
                     </div>
                     <!-- end notify -->
 
@@ -179,8 +165,52 @@
 
                      <!-- start bar -->
                      <div class="info__item">
-                        <i class=" info__icon fa-solid fa-bars"></i>
+                        <i class="js-menu info__icon fa-solid fa-bars"></i>
                     </div>
+
+
+                    <div class="menu-modal js-menu-modal">
+                        <span class="menu-modal-close">
+                           <i class="menu-modal-close-icon fa-solid fa-xmark js-close"></i>
+                        </span>
+                       <div class="menu-modal-container">
+                           <div class="menu-modal-in4">
+
+                               <img src="./assets/img/goshop-3.png" alt="" class="menu-modal-img">
+                               <img src="./assets/img/menu-1.png" alt="" class="menu-modal-img">
+                               <img src="./assets/img/menu-2.jpg" alt="" class="menu-modal-img menu-modal-img-shadow ">
+                               
+                           </div>
+                           <p class="menu-modal-header">Follow Me</p>
+                           <div class="menu-modal-social">
+
+                               <a href="" class="menu-modal-link">
+                                   <i class="menu-modal-icon fab fa-facebook-f"></i>
+                               </a>
+                               <a href="" class="menu-modal-link">
+                                   <i class="menu-modal-icon fab fa-instagram"></i>
+                               </a>
+                               <a href="" class="menu-modal-link">
+                                   <i class="menu-modal-icon fab fab fa-pinterest-p"></i>
+                               </a>
+                               <a href="" class="menu-modal-link">
+                                   <i class="menu-modal-icon fab fa-twitter"></i>
+                               </a>
+                           </div>
+                           <div class="menu-modal-account">
+                                <button class="account-login js-login">
+                                    Đăng nhập
+                                </button>
+
+                                <button class="account-register js-login">
+                                    Đăng kí
+                                </button>
+
+
+
+                           </div>
+                       </div>
+                   </div>
                     <!-- end bar -->
                     
 
@@ -215,7 +245,7 @@
 
 
             <div class="slider__list fade">
-                <img src="./assets/img/slider/slider-4.jpg" alt="" class="slider__img">
+                <img src="./assets/img/slider/slider-7.jpg" alt="" class="slider__img">
             </div>
 
             <div class="slider__list fade">
@@ -229,7 +259,7 @@
 
 
         </div>
-        <div class="container">
+        <div   class="container">
 
         </div>
 
@@ -313,26 +343,102 @@
 
 
         </footer>
-
-
-
-        <script>
-            var slideIndex = 0;
-            showSlides();
+        
+        <a href="#"  class="go-to-top ">
+            <i class="go-to-top__icon fa-solid fa-chevron-up"></i>
+        </a>
+        <script src="./assets/tung.js"></script>
+       
+        <div  class="account js-account ">
+            <div class="login">
+                <div class="login-close js-login-close">
+                    <i class="login-close-icon fa-solid fa-xmark" ></i>
     
-            function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("slider__list");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].style.display = "flex";
-            setTimeout(showSlides, 5000); // Change image every 2 seconds
-            }
-        </script>
+                </div>
+                <div class="login-container">
+                    <div class="form">
+                        <div class="content">
+                            <h1>Đăng nhập</h1>
+                            <div class="group">
+                                <input type="text" class="input-text" placeholder="Tên tài khoản " required>
+                            </div>
+            
+                            <div class="group">
+                                <input type="text" class="input-text" placeholder=" Mật khẩu" required>
+                            </div>
+            
+                            <!-- <div class="group">
+                                <input type="text" class="input-text" placeholder="Nhập lại mật khẩu " required>
+                            </div> -->
+            
+                            <div class="group-save">
+                                <input type="checkbox"> 
+                                <label >Lưu lại</label>
+                            </div>
+            
+                            <button>Đăng nhập</button>
+                            <div class="group-2">
+                                <div class="group-2__item ">
+                                    <i class=" group-2__icon fa-brands fa-facebook"></i>
+                                    <p class="group-2__text">Kết nối với Facebook</p>
+                                </div>
+                                <div class="group-2__item">
+                                    <i class="group-2__icon group-2__icon-2 fa-brands fa-google"></i>
+                                    <p class="group-2__text">Kết nối với Google</p>
+                                </div>
+    
+    
+                            </div>
+
+                        </div>
+
+                        
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script>
+
+    const menuOpen=document.querySelector('.js-menu');
+    const menu=document.querySelector('.js-menu-modal');
+    const menuClose=document.querySelector('.js-close');
+
+
+    function showMenu(){
+    menu.classList.add('open');
+    }
+    function closeMenu(){
+    menu.classList.remove('open');
+    }
+
+         menuOpen.addEventListener('click',showMenu)
+         menuClose.addEventListener('click',closeMenu)
+
+
+    //open and close login
+    const logins = document.querySelectorAll('.js-login');
+    const account = document.querySelector('.js-account');
+    const closeLogin = document.querySelector('.js-login-close');
+        function showLogin(){
+        account.classList.add('open');
+         }
+         function loginClose(){
+        account.classList.remove('open');
+         }
+
+
+    for(const login of logins){
+    login.addEventListener('click',showLogin);
+    login.addEventListener('click',closeMenu);
+    }
+    closeLogin.addEventListener('click',loginClose);
+    </script> 
+
     
  </body>
 
