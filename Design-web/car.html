@@ -202,7 +202,7 @@
                                     Đăng nhập
                                 </button>
 
-                                <button class="account-register js-login">
+                                <button class="account-register js-register">
                                     Đăng kí
                                 </button>
 
@@ -347,26 +347,25 @@
         <a href="#"  class="go-to-top ">
             <i class="go-to-top__icon fa-solid fa-chevron-up"></i>
         </a>
-        <script src="./assets/tung.js"></script>
-       
+        
         <div  class="account js-account ">
-            <div class="login">
+            <div class="account__container">
                 <div class="login-close js-login-close">
                     <i class="login-close-icon fa-solid fa-xmark" ></i>
-    
+                    
                 </div>
                 <div class="login-container">
-                    <div class="form">
+                    <div class="form login" id="form">
                         <div class="content">
                             <h1>Đăng nhập</h1>
                             <div class="group">
                                 <input type="text" class="input-text" placeholder="Tên tài khoản " required>
                             </div>
-            
+                            
                             <div class="group">
                                 <input type="text" class="input-text" placeholder=" Mật khẩu" required>
                             </div>
-            
+                            
                             <!-- <div class="group">
                                 <input type="text" class="input-text" placeholder="Nhập lại mật khẩu " required>
                             </div> -->
@@ -375,9 +374,9 @@
                                 <input type="checkbox"> 
                                 <label >Lưu lại</label>
                             </div>
-            
+                            
                             <button>Đăng nhập</button>
-                            <div class="group-2">
+                            <!-- <div class="group-2">
                                 <div class="group-2__item ">
                                     <i class=" group-2__icon fa-brands fa-facebook"></i>
                                     <p class="group-2__text">Kết nối với Facebook</p>
@@ -386,23 +385,54 @@
                                     <i class="group-2__icon group-2__icon-2 fa-brands fa-google"></i>
                                     <p class="group-2__text">Kết nối với Google</p>
                                 </div>
-    
-    
-                            </div>
-
+                                
+                                
+                            </div> -->
+                            
                         </div>
-
+                        <div class="content">
+                            <h1>Đăng kí</h1>
+                            <div class="group">
+                                <input type="text" class="input-text" placeholder="Tên tài khoản " required>
+                            </div>
+                            
+                            <div class="group">
+                                <input type="text" class="input-text" placeholder=" Mật khẩu" required>
+                            </div>
+            
+                            <div class="group">
+                                <input type="text" class="input-text" placeholder="Nhập lại mật khẩu " required>
+                            </div>
+                            
+                            <div class="group-save">
+                                <input type="checkbox"> 
+                                <label >Lưu lại</label>
+                            </div>
+                            
+                            <button>Đăng kí</button>
+                            
+                            
+                        </div>
                         
-
-
-
-
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    <div class="option">
+                        <div class="bg-active" id="bg-active"></div>
+                        <div class="changetype active " id="login">Đăng nhập</div>
+                        <div class="changetype" id="register">Đăng kí</div>
+                        
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
+    <script src="./assets/tung.js"></script>
+    <!-- <script>
 
     const menuOpen=document.querySelector('.js-menu');
     const menu=document.querySelector('.js-menu-modal');
@@ -421,7 +451,8 @@
 
 
     //open and close login
-    const logins = document.querySelectorAll('.js-login');
+    const login = document.querySelector('.js-login');
+    const register=document.querySelector('.js-register');
     const account = document.querySelector('.js-account');
     const closeLogin = document.querySelector('.js-login-close');
         function showLogin(){
@@ -432,12 +463,12 @@
          }
 
 
-    for(const login of logins){
+    regiser.addEventListener('click',closeMenu);
     login.addEventListener('click',showLogin);
     login.addEventListener('click',closeMenu);
-    }
+    
     closeLogin.addEventListener('click',loginClose);
-    </script> 
+    </script>  -->
 
     
  </body>

@@ -458,9 +458,9 @@ header{
 .account.open{
     transform: translateY(0%);
 }
-.login{
+.account__container{
     background-image: linear-gradient(to bottom right,#6997dd,#ce9cb4);
-    width: 70vw;
+    width: 80vw;
     height: 90vh;
     overflow: hidden;
     position: absolute;
@@ -536,11 +536,16 @@ header{
 }
 .form{
     background-color: rgba(239, 239, 239,0.3);
-    width: 80%;
+    width: 85%;
     height: 100%;
     border-radius: 3%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    position: absolute;
+    
+    overflow: hidden;
+  
     
 }
 .content{
@@ -548,6 +553,8 @@ header{
     padding: 10%;
     height: 80%;
     position: absolute;
+    top: 0;
+    z-index: 1;
 }
 .content h1{
     color: #fff;
@@ -556,7 +563,8 @@ header{
 .group{
     /* padding-top:8px; */
     width: 100%;
-    height: 55px;
+    height: 50px;
+    margin: 10px 0px;
     
 }
 .group-save{
@@ -591,8 +599,78 @@ header{
     position: absolute;
     background-image: linear-gradient(to right,#5F9DF7,#f1a4a4);
     color: #fff;
-    bottom: 5px;
+    bottom: 10px;
+    border-radius: 10px;
 }
+
+.option{
+    position: absolute;
+    bottom: 10px;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.changetype{
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    height: 40px;
+    cursor: pointer;
+}
+.bg-active{
+    position: absolute;
+    width: 50%;
+    left: 0;
+    transition: 1s;
+    background-color: #6379e2;
+    height: 40px;
+    z-index: -1;
+    border-radius: 20px;
+}
+.changetype.active{
+    color: #fff;
+}
+.form.login .content:nth-child(1){
+    z-index: 2;
+    animation: nextContent .8s ease-in-out 1 forwards;
+}
+.form.login .content:nth-child(2){
+    z-index: 2;
+    animation: outContent .8s ease-in-out 1 forwards;
+}
+
+@keyframes nextContent {
+    from {
+        transform: translate(100%,0px);
+    }to{
+        transform: translate(-10%,0px);
+    }
+
+}
+@keyframes outContent {
+    from {
+        transform: translate(0,0px);
+    }to{
+        transform: translate(-110%,0px);
+    }
+
+}
+
+.form.register .content:nth-child(1){
+    z-index: 2;
+    animation: outContent .8s ease-in-out 1 forwards;
+}
+.form.register .content:nth-child(2){
+    z-index: 2;
+    animation: nextContent .8s ease-in-out 1 forwards;
+}
+
+
+
+
 .group-2{
     position: absolute;
     bottom: 20px;
@@ -649,7 +727,6 @@ header{
     width: 100%;
     /* height: 80vh; */
     overflow: hidden;
-    display: block;
     display: flex;
     flex-wrap: wrap;
     flex: 0 0 100%;
@@ -657,7 +734,6 @@ header{
     width: 100%;
     display: block;
     padding: 0;
-    display: flex;
     flex-wrap: wrap;
     
 
@@ -706,7 +782,7 @@ header{
 
 .footer{
     background-color: #212121;
-    /* width: 100vw; */
+    width: 100%;
     display: flex;
     margin:  auto;
     align-items: center;
