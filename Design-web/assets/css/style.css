@@ -10,7 +10,7 @@ header{
     top: 0;
     width: 100vw;
     height: 55px;    
-    z-index: 2;
+    z-index: 3;
 }
 
 
@@ -19,7 +19,11 @@ header{
     width: 150px ;
     height: 48px;
 }
-
+.nav{
+    width: 40vw;
+    padding: 0 10px;
+    height: 100%;
+}
 
 
 .nav__list{
@@ -27,18 +31,14 @@ header{
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    padding-left: 12px;
-    padding-right: 50px;
     margin: 0;
     height: 100%;
-    
-
 }
 
 .nav__item{
-    display: inline-block;
+    display: block;
     position: relative;
-    width: 60%;
+    width: 80%;
     height: 100%;
     text-align: center;
     flex: 1;
@@ -53,12 +53,21 @@ header{
     font-weight: 500;
     position: relative;
     transition: color .2s ease-out;
-    padding: 20px 30px;
-    display: inline-block;
+    word-wrap: normal;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .nav__item-text{
     position: relative;
+    /* width: 100%; */
+    display: block;
+  
+  
 }
 
 .nav__item-text::after{
@@ -69,7 +78,6 @@ header{
     height: 2px;
     left: 0;
     bottom: -2px;
-    -webkit-transition: width .2s ease-out, background-color .2s ease-out ;
     transition: width .2s ease-out, background-color .2s ease-out;
 }
 .nav__item-link:hover {
@@ -84,7 +92,7 @@ header{
 .subnav{
     display: none;
     position: absolute;
-    top: 65px;
+    top: 55px;
     background-color: #D8D9CF;
     box-shadow: 0 3px 13px 0 rgb(0 0 0 / 3%);
     animation: drop-down linear forwards .4s;
@@ -170,16 +178,23 @@ header{
     justify-content: flex-end;
     align-items: center;
     height: 100%;
+    margin-right: 10px;
 }
 
 .info__item{
     position: relative;
-    padding: 0 6px ;
+    /* padding: 0 6px ; */
     cursor: pointer;
 }
-.info__item:last-child{
-    margin-right: 3px;
-}
+/* .info__item:nth-child(3){
+    /* margin-right: 3px;
+    padding-right: 3px; */
+    
+/* .info__icon:nth-child(3){ */
+    /* font-size: 32px;
+    width: 100%;
+    margin-right: 5px; */
+/* }  */
 
 .info__icon{
     color: #fff;
@@ -221,6 +236,7 @@ header{
    font-size: 16px;
    opacity: 0.7;
    margin-top: 5px;
+   margin-right: 5px;
    cursor: pointer;
 }
 .icon__search:hover{
@@ -446,7 +462,7 @@ header{
     background-color: rgba(0, 0,0,0.3);
     height:100vh;
     width:100vw;
-    z-index:2;
+    z-index:4;
     position: fixed;
     top: 0;
     right: 0;
@@ -464,14 +480,18 @@ header{
     height: 90vh;
     overflow: hidden;
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 3px;
-    display: flex;
+    border-radius: 5px;
+    display: none;
     flex-direction: row;
     justify-content: flex-end;
   
+}
+.account__container.open{
+    display: flex;
+
 }
 .login-close{
     position: absolute;
@@ -497,8 +517,8 @@ header{
     height: 80vh;
     display: flex;
     justify-content: center;
-    
 }
+
 .login-container::before{
     position: absolute;
     bottom: 50%;
@@ -753,7 +773,7 @@ header{
     object-fit: cover;
     object-position: 15% 25%;
     animation: zoom linear 6s;
-    filter: brightness(70%);
+    filter: brightness(90%);
 }
 
 .fade {
