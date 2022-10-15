@@ -1,7 +1,7 @@
 /*Begin_product*/
 .container{
     width: 100%;
-    background-color: #181818;
+    background-color: #302e2e;
     padding-bottom: 32px;
     
 }
@@ -66,7 +66,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: #181818;
+    background-color: #302e2e;
     font-family: MBCorpo Title,sans-serif;
     
 }
@@ -87,7 +87,7 @@
     color: #fff;
     text-align: center;
     font-size: 32px;
-    background-color: #181818;
+    background-color: #302e2e;
     line-height: 64px;
     font-family: MBCorpo Title,sans-serif;
     font-weight: 400;
@@ -138,7 +138,7 @@ ul.list_car li:hover img{
     border-radius: 4px;
 }
 .product_body{
-    background-color: #181819;
+    background-color: #302e2e;
     width: 100%;
     padding-bottom: 15px;
 
@@ -199,6 +199,22 @@ ul.list_car li:hover img{
  .fa-solid{
     font-size: 15px;
     padding-right: 2px;
+ }
+.viewmore__btn{
+    text-align: center;
+    border: none;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    color: #ccc;
+    height: 20px;
+    width: 30%;
+    margin: 10px auto;
+    cursor: pointer;
+    padding-top: 10px;
+ }
+ .viewmore__btn:hover{
+    color: var(--primary-color);
  }
 
 

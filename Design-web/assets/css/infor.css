@@ -1,7 +1,7 @@
 
 
 .infor__list{
-    background-image: linear-gradient(to bottom right,#6997dd,#ce9cb4);
+    background-image: linear-gradient(to bottom right,#7278c3,#e194e3);
     width: 80vw;
     height: 90vh;
     overflow: hidden;
@@ -36,7 +36,7 @@
     height: 100%;
     flex-direction: column;
 }
-.infor__slider #main_img{
+.infor__slider > img{
     border-radius: 5px;
     width: 90%;
     margin-right: 50px;
@@ -54,7 +54,7 @@
     flex-direction: column;
 }
 .infor__content .product-section-title{
-    font-size: 30px;
+    font-size: 24px;
     color: #333;
     font-weight: 500;
     line-height: 2.0;
@@ -136,9 +136,12 @@
     margin-top: 5px;
 
 }
+.infor__slider p img{
+     border-radius: 8px;
+}
 .infor__slider p img:hover{
 
-    border-radius: 5px;
+   
     border: 2px solid rgb(149, 125, 125);
     display: inline-block;
     cursor: pointer;
@@ -146,10 +149,17 @@
 
 
 
-.lamborghini_gallardo_spyder.open{
-    display: flex;
-}
-.lamborghini_aventador_svj.open{
+.lamborghini_gallardo_spyder.open,
+.lamborghini_avendator_svj.open,
+.lamborghini_huracan_performante.open,
+.lamborghini_reventon.open,
+.lamborghini_urus_mansory.open,
+.lamborghini_murcielago_sv.open,
+.lamborghini_aventador_svj_roadster.open,
+.lamborghini_aventador_sv_roadster.open,
+.lamborghini_aventador_lp_700_4.open,
+.lamborghini-aventador_lp750_4_sv.open
+{
     display: flex;
 }
 
