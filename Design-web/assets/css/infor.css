@@ -1,7 +1,7 @@
 
 
 .infor__list{
-    background-image: linear-gradient(to bottom right,#7278c3,#e194e3);
+    background-image: linear-gradient(to bottom right,#8289f4,#7F6EB2);
     width: 80vw;
     height: 90vh;
     overflow: hidden;
@@ -105,12 +105,12 @@
 .shoping__item{
     flex: 1;
     display: flex;
+    cursor: pointer;
     margin-right: 20px;
     border-radius: 5px;
     align-items: center;
-    background-color: #ffeee8;
+    background-color: #e0e0e0;
     height: 50px;
-    border: 1px solid rgb(209, 54, 54);
 }
 .shoping__text{
     padding-top: 5px;
@@ -158,7 +158,46 @@
 .lamborghini_aventador_svj_roadster.open,
 .lamborghini_aventador_sv_roadster.open,
 .lamborghini_aventador_lp_700_4.open,
-.lamborghini-aventador_lp750_4_sv.open
+.lamborghini-aventador_lp750_4_sv.open,
+.porsche_panamera_platinum_edition.open,
+.porsche_918_spyder.open,
+.porsche_cayenne_gts.open,
+.porsche_718_boxster_spyder.open,
+.porsche_cayman_gt4.open,
+.porsche_718_boxster.open,
+.porsche_911_gt2_rs_weissach.open,
+.porsche_carrera_gt.open,
+.porsche_911_gt3_rs.open,
+.porsche_911_gt3_rs_weissach.open,
+.porsche_959.open,
+.porsche_911_turbo_s_cabriolet.open,
+.porsche_911_turbo_s.open,
+.Porsche_718_Boxster_GTS.open,
+.bugatti_veyron_linea_vivere.open,
+.bugatti_veyron_grand_sport.open,
+.bugatti_chiron_divo.open,
+.bugatti_chiron_yellow_and_black.open,
+.bugatti_centodieci.open,
+.bugatti_chiron_pur_sport.open,
+.mclaren_elva_1_of_149.open,
+.mclaren_p1_1_of_350.open,
+.mclaren_p1_carbon_series_1_of_5.open,
+.mclaren_675_lt.open,
+.mclaren_enna_1_of_500_blue.open,
+.mclaren_765lt_1_of_765.open,
+.mclaren_675lt_1_of_500.open,
+.mclaren_p1_1_of_375.open,
+.rolls_royce_ghost_ewb_black.open,
+.rolls_royce_cullinan_grey.open,
+.rolls_royce_ghost_blue_white.open,
+.rolls_royce_phantom_white.open,
+.rolls_royce_wraith.open,
+.rolls_royce_cullinan_black_badge_white.open,
+.rolls_royce_phantom_drophead_zenith_edition.open,
+.rolls_royce_ghost.open,
+.rolls_royce_phantom_coupe_one_of_one.open,
+.rolls_royce_cullinan_blue.open,
+.rolls_royce_wraith_black_badge.open
 {
     display: flex;
 }

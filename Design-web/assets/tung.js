@@ -64,7 +64,10 @@ const menuOpen=document.querySelector('.js-menu');
     const account = document.querySelector('.js-account');
     const logincontainer = document.querySelector('.js-account__container')  
     const closeLogin = document.querySelector('.js-login-close');
-        function showaccount(){
+    const tragop=document.querySelector('.js-tragop');
+    const tragopcontainer = document.querySelector('.js-tragop-container');
+    const closetragop=document.querySelector('.js-tragop-close');
+    function showaccount(){
         account.classList.add('open');
          }
          function loginClose(){
@@ -74,8 +77,15 @@ const menuOpen=document.querySelector('.js-menu');
         function showLogin(){
         logincontainer.classList.add('open');
         }
-
-
+        function showtragop(){
+        tragopcontainer.classList.add('open');
+        }
+    closetragop.addEventListener('click', function(){
+        tragopcontainer.classList.remove('open');
+        account.classList.remove('open');
+    });
+    tragop.addEventListener('click',showaccount);
+    tragop.addEventListener('click',showtragop);
     register.addEventListener('click',closeMenu);
     login.addEventListener('click',showaccount);
     login.addEventListener('click',closeMenu);
@@ -157,8 +167,10 @@ const imgs= document.querySelectorAll('.product_item')
 const infors=document.querySelectorAll('.infor__list');
 const closeInfors=document.querySelectorAll('.js-infor-close');
 
+
 for(const infor of infors){
     for(const closeInfor of closeInfors){
+
         closeInfor.addEventListener('click', function(e){
             infor.classList.remove('open');
             account.classList.remove('open');
@@ -168,11 +180,132 @@ for(const infor of infors){
     }
 }
  
+//click img infor
 
-// console.log(t);
-// closeInfor.addEventListener('click', function(ev) {
-//     const t3=document.getElementsByClassName(t)
-//     t3[0].classList.remove('open');
+const imgss=document.querySelectorAll('.infor_img');
+for(const img of imgss){
+    img.addEventListener("click",function(e){
+        const a=this.id;
+        const a1=document.getElementsByClassName(a);
+        a1[0].setAttribute("src", img.getAttribute("src"));
 
+    })
+}
+ 
+
+// click xemthem lamboghini
+
+const preslambogini=document.getElementById("preslambo")
+const morelamboginis=document.querySelectorAll('.viewlambogini')
+const hidelambogini=document.getElementById("hidelambo")
+hidelambogini.addEventListener("click", function(e) {
+    for(const morelambogini of morelamboginis){
+        morelambogini.style.display = "block";
+    }
+    
+})
+preslambogini.addEventListener("click", function(e) {
+    for(const morelambogini of morelamboginis){
+        morelambogini.style.display = "none";
+    }
+})
+
+const formlambo=document.querySelector('.viewmorelambo')
+const btnlambos=document.querySelectorAll('.js_btn_lambogini')
+
+for(const btnlambo of btnlambos){
+    btnlambo.addEventListener('click', function(e){
+        formlambo.classList.remove("hidelambo")
+        formlambo.classList.remove("preslambo")
+        formlambo.classList.add(this.id)
+
+    })
+}
+
+//ferari
+const presferari=document.getElementById("presferari")
+const moreferaris=document.querySelectorAll('.viewferari')
+const hideferari=document.getElementById("hideferari")
+hideferari.addEventListener("click", function(e) {
+    for(const moreferari of moreferaris){
+        moreferari.style.display = "block";
+    }
+    
+})
+presferari.addEventListener("click", function(e) {
+    for(const moreferari of moreferaris){
+        moreferari.style.display = "none";
+    }
+})
+
+const formferari=document.querySelector('.viewmoreferari')
+const btnferaris=document.querySelectorAll('.js_btn_ferari')
+
+for(const btnferari of btnferaris){
+    btnferari.addEventListener('click', function(e){
+        formferari.classList.remove("hideferari")
+        formferari.classList.remove("presferari")
+        formferari.classList.add(this.id)
+
+    })
+}
+
+//porsche
+
+const presporsche=document.getElementById("presporsche")
+const moreporsches=document.querySelectorAll('.viewporsche')
+const hideporsche=document.getElementById("hideporsche")
+hideporsche.addEventListener("click", function(e) {
+    for(const moreporsche of moreporsches){
+        moreporsche.style.display = "block";
+    }
+    
+})
+presporsche.addEventListener("click", function(e) {
+    for(const moreporsche of moreporsches){
+        moreporsche.style.display = "none";
+    }
+})
+
+const formporsche=document.querySelector('.viewmoreporsche')
+const btnporsches=document.querySelectorAll('.js_btn_porsche')
+
+for(const btnporsche of btnporsches){
+    btnporsche.addEventListener('click', function(e){
+        formporsche.classList.remove("hideporsche")
+        formporsche.classList.remove("presporsche")
+        formporsche.classList.add(this.id)
+
+    })
+}
+
+///rollsroyce
+
+const presrollsroyce=document.getElementById("presrollsroyce")
+const morerollsroyces=document.querySelectorAll('.viewrollsroyce')
+const hiderollsroyce=document.getElementById("hiderollsroyce")
+hiderollsroyce.addEventListener("click", function(e) {
+    for(const morerollsroyce of morerollsroyces){
+        morerollsroyce.style.display = "block";
+    }
+    
+})
+presrollsroyce.addEventListener("click", function(e) {
+    for(const morerollsroyce of morerollsroyces){
+        morerollsroyce.style.display = "none";
+    }
+})
+
+const formrollsroyce=document.querySelector('.viewmorerollsroyce')
+const btnrollsroyces=document.querySelectorAll('.js_btn_rollsroyce')
+
+for(const btnrollsroyce of btnrollsroyces){
+    btnrollsroyce.addEventListener('click', function(e){
+        formrollsroyce.classList.remove("hiderollsroyce")
+        formrollsroyce.classList.remove("presrollsroyce")
+        formrollsroyce.classList.add(this.id)
+
+    })
+}
 
 
