@@ -197,7 +197,18 @@
 .rolls_royce_ghost.open,
 .rolls_royce_phantom_coupe_one_of_one.open,
 .rolls_royce_cullinan_blue.open,
-.rolls_royce_wraith_black_badge.open
+.rolls_royce_wraith_black_badge.open,
+.ferrari_gtc4lusso_t.open,
+.ferrari_599_gto.open,
+.ferrari_488_gtb_grey.open,
+.ferrari_roma_silver.open,
+.ferrari_512_tr.open,
+.ferrari_sf90_stradale.open,
+.ferrari_812_gts.open,
+.ferrari_488_spider.open,
+.ferrari_laferrari.open,
+.ferrari_roma_red.open,
+.ferrari_488_gtb_red.open
 {
     display: flex;
 }
