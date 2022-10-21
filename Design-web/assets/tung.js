@@ -67,6 +67,9 @@ const menuOpen=document.querySelector('.js-menu');
     const tragop=document.querySelector('.js-tragop');
     const tragopcontainer = document.querySelector('.js-tragop-container');
     const closetragop=document.querySelector('.js-tragop-close');
+    const tintuc=document.querySelector('.js-tintuc');
+    const tintuccontainer = document.querySelector('.js-tintuc-container');
+    const closetintuc=document.querySelector('.js-tintuc-close');
     function showaccount(){
         account.classList.add('open');
          }
@@ -80,12 +83,22 @@ const menuOpen=document.querySelector('.js-menu');
         function showtragop(){
         tragopcontainer.classList.add('open');
         }
+        function showtintuc(){
+        tintuccontainer.classList.add('open');
+        }
+
     closetragop.addEventListener('click', function(){
         tragopcontainer.classList.remove('open');
         account.classList.remove('open');
     });
+    closetintuc.addEventListener('click', function(){
+        tintuccontainer.classList.remove('open');
+        account.classList.remove('open');
+    });
     tragop.addEventListener('click',showaccount);
     tragop.addEventListener('click',showtragop);
+    tintuc.addEventListener('click',showaccount);
+    tintuc.addEventListener('click',showtintuc);
     register.addEventListener('click',closeMenu);
     login.addEventListener('click',showaccount);
     login.addEventListener('click',closeMenu);
@@ -138,7 +151,20 @@ const menuOpen=document.querySelector('.js-menu');
     })
     register.addEventListener('click',removelogin)
 
+// change type tintuc
+const changes=document.querySelectorAll('.change');
+const forms=document.getElementById('forms');
+const active=document.getElementById('bgactive');
 
+for(const change of changes){
+    change.addEventListener('click',function(){
+        forms.classList.remove('tintuc');
+        forms.classList.remove('video');
+        forms.classList.add(this.id)
+        active.style.left=this.offsetLeft+'px'
+
+    })
+}
 
 
 
@@ -307,5 +333,18 @@ for(const btnrollsroyce of btnrollsroyces){
 
     })
 }
+// reponsive
+const navMobileBtn = document.querySelector('.js-mobile-btn')
+const mobileMenu = document.querySelector('.js-mobile-menu')
+var mobileOverlay = document.querySelector('.mobile-menu-overlay')
 
+navMobileBtn.onclick=function(){
+    mobileMenu.style.transform="scaleY(1)";
+    mobileOverlay.style.display="block";
+}
+
+mobileOverlay.onclick=function(){
+    mobileMenu.style.transform="scaleY(0)";
+    mobileOverlay.style.display="none";
+}
 

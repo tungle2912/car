@@ -23,19 +23,27 @@
 <div class="main">
         <!-- begin header -->
         <header>
-            <div class="mobile-header-menu hide-on-pc">
+            <div class="mobile-header-menu hide-on-pc hide-on-mobile">
                 <i class="mobile-header-menu-icon far fa-user-circle" ></i>
             </div>
            <div class="logo">
-            <a href="#"><img class="mobile-header__logo-img hide-on-pc" src="./assets/img/goshop-3.png" alt=""></a>
-            <a href="#"><img class="logo-img hide-on-mobile-tablet" src="./assets/img/goshop-3.png" alt=""></a>
+            <!-- <img class="mobile-header__logo-img hide-on-pc" src="./assets/img/goshop-3.png" alt=""> -->
+            <img class="logo-img " src="./assets/img/goshop-3.png" alt="">
             </div>
+
             <div class="nav">
+                <input type="checkbox" name="openNav" id="openNav">
+                <label for="openNav" class="openNav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
                     <ul class="nav__list">
                         <li class="nav__item">
                             <!-- start home -->
                             <a href="#" class="nav__item-link">
                                 <span class="nav__item-text">Home</span>
+                                <i class="fa-solid fa-house-chimney hide-on-pc"></i>
                             </a>
                         </li>
                         <!-- end Home -->
@@ -43,7 +51,12 @@
                         <li class="nav__item">
                             <a href="#sanpham" class="nav__item-link">
                                 <span class="nav__item-text">Product</span>
+                                <i class="fa-solid fa-border-all hide-on-pc"></i>
                             </a>
+                           <!-- <label >
+                            <input type="checkbox">
+                            <i class="fa-solid fa-chevron-down"></i>
+                           </label> -->
                             <div class="subnav">
                                 <ul class="subnav__list">
                                     <li class="subnav__item">
@@ -85,13 +98,27 @@
                             <a class="nav__item-link">
                                <span class="nav__item-text">
                                 Installment</span>
+                                <i class="fa-brands fa-instalod hide-on-pc"></i>
                             </a>
                         </li>
 
 
-                        <li class="nav__item">
+                        <li class="nav__item js-tintuc">
                             <a class="nav__item-link">
                                <span class="nav__item-text">News</span>
+                               <i class="fa-solid fa-newspaper hide-on-pc"></i>
+                            </a>
+                        </li>
+                        <li class="nav__item  hide-on-pc">
+                            <a class="nav__item-link">
+                               <span class="nav__item-text">Login</span>
+                               <i class="fa-solid fa-right-to-bracket hide-on-pc"></i>
+                            </a>
+                        </li>
+                        <li class="nav__item hide-on-pc">
+                            <a class="nav__item-link">
+                               <span class="nav__item-text">register</span>
+                               <i class="fa-solid fa-right-to-bracket hide-on-pc"></i>
                             </a>
                         </li>
                 </ul>
@@ -245,9 +272,6 @@
                                 <button class="account-register js-register">
                                     Register
                                 </button>
-
-
-
                            </div>
                        </div>
                    </div>
@@ -268,9 +292,10 @@
 
 
             </div>
-            <div class="mobile-header-menu hide-on-pc">
+            <!-- <div class="mobile-header-menu hide-on-pc js-mobile-btn">
                 <i class="mobile-header-menu-icon fa-solid fa-bars"></i>
             </div>
+            <div class="mobile-menu-overlay"></div> -->
                 
                
         </header>
@@ -338,9 +363,9 @@
                 </ul>
             </div>
             <div class="product_list">
-                <div class="product_item">
+                <div class="product_item" id="lamborghini-aventador_lp750_4_sv">
                     <ul class="list_car">
-                        <li> <a href="">
+                        <li><a>   
                             <img src="./assets/img/content/Lamborghini/2016-Lamborghini-Aventador-SV-RED-4506-4.jpg" alt="product" class="product_img">
                             <p><span class="product_show">Details</span></p>
                             
@@ -354,9 +379,9 @@
                     </div>
                 </div>
 
-                <div class="product_item">
+                <div class="product_item" id="ferrari_sf90_stradale">
                     <ul class="list_car">
-                        <li> <a href="">
+                        <li><a>
                             <img src="./assets/img/content/Ferari/2022-Ferrari-SF90-RED-0792-2.jpg" alt="product" class="product_img">
                             <p><span class="product_show">Details</span></p>
                         </a>
@@ -370,7 +395,7 @@
                 </div> 
                 <div class="product_item">
                     <ul class="list_car">
-                        <li> <a href="">
+                        <li><a>
                             <img src="./assets/img/content/Porsche/Porsche Taycan 2020.jpg" alt="product" class="product_img">
                             <p><span class="product_show">Details</span></p>
                         </a>
@@ -383,7 +408,7 @@
                 </div>
                 </div> <div class="product_item">
                     <ul class="list_car">
-                        <li> <a href="">
+                        <li><a>
                             <img src="./assets/img/content/ROLLS-ROYCE/Rolls Royce Cullinan Black Badge.jpg" alt="product" class="product_img">
                             <p><span class="product_show">Details</span></p>
                         </a>
@@ -395,9 +420,9 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div> 
-                <div class="product_item">
+                <div class="product_item" id="bugatti_chiron_divo ">
                     <ul class="list_car">
-                        <li> <a href="">
+                        <li><a>
                             <img src="./assets/img/content/Bugatti/Bugatti Chiron Divo.png" alt="product" class="product_img">
                             <p><span class="product_show">Details</span></p>
                         </a>
@@ -411,7 +436,7 @@
                 </div> 
                 <div class="product_item">
                     <ul class="list_car">
-                        <li> <a href="">
+                        <li><a>
                             <img src="./assets/img/content/McLaren/2019-Mclaren-570S-Spider-RED-6479-3.jpg" alt="product" class="product_img">
                             <p><span class="product_show">Details</span></p>
                         </a>
@@ -428,21 +453,6 @@
 
             <h3 class ="product_Ds " id="lambogini">Lamborghini</h3>
                 <div class="product_list">
-                    <!-- <div class="product_item">
-                        <ul class="list_car">
-                        <li> <a href="">
-                            <img src="./assets/img/content/Lamborghini/2021-Lamborghini-Urus-BLACK-1447-2-972-574.jpg" alt="product" class="product_img">
-                            <p><span class="product_show">Details</span></p>
-                        </a>
-                        </li>
-                    </ul>
-                    <div class="product_body">
-                        <h3 class="product_header">Lamborghini Urus</h3>
-                        <p class="product_gia">5,200,000,000 VND</p>
-                        <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
-                    </div>
-                </div>
-                 -->
                 <div class="product_item" id="lamborghini_gallardo_spyder">
                     <ul class="list_car">
                         <li> <a>
@@ -499,7 +509,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                 </div>
                 </div>
-               <div class="product_item" id="lamborghini_urus_mansory">
+               <div class="product_item hide-on-mobile" id="lamborghini_urus_mansory">
                    <ul class="list_car">
                        <li> <a>
                            <img src="./assets/img/content/Lamborghini/2021-Lamborghini-Urus-Mansory-Green-5795-2.jpg" alt="product" class="product_img">
@@ -513,7 +523,7 @@
                    <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                     </div> 
-                <div class="product_item" id="lamborghini_murcielago_sv">
+                <div class="product_item hide-on-mobile" id="lamborghini_murcielago_sv">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Lamborghini/2010-Lamborghini-Murcielago-SV-1-of-186-BLACK-3786-2.jpg" alt="product" class="product_img">
@@ -527,7 +537,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                     </div> 
-                <div class="product_item" id="lamborghini_aventador_svj_roadster">
+                <div class="product_item hide-on-mobile-tablet" id="lamborghini_aventador_svj_roadster">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Lamborghini/2021-Lamborghini-Aventador-SVJ-Roadster-1-of-800-green-9994-8.jpg" alt="product" class="product_img">
@@ -541,7 +551,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div> 
-                <div class="product_item" id="lamborghini_aventador_sv_roadster">
+                <div class="product_item hide-on-mobile-tablet" id="lamborghini_aventador_sv_roadster">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Lamborghini/2016-Lamborghini-Aventador-SV-Roasdter-1-of-500-YELLOW-5093-15.jpg" alt="product" class="product_img">
@@ -555,7 +565,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                     </div> 
-                <div class="product_item viewlambogini" id="lamborghini_aventador_lp_700_4">
+                <div class="product_item viewlambogini hide-on-mobile-tablet" id="lamborghini_aventador_lp_700_4">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Lamborghini/2013-Lamborghini-Aventador-LP-700-4-DM-4.jpg" alt="product" class="product_img">
@@ -569,7 +579,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                     </div> 
-                <div class="product_item viewlambogini" id="lamborghini-aventador_lp750_4_sv">
+                <div class="product_item viewlambogini hide-on-mobile-tablet" id="lamborghini-aventador_lp750_4_sv">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Lamborghini/2016-Lamborghini-Aventador-SV-RED-4506-4.jpg" alt="product" class="product_img">
@@ -602,7 +612,7 @@
 
                 <h3 class ="product_Ds" id="ferari">Ferari</h3>
                 <div class="product_list">
-                <div class="product_item">
+                <div class="product_item" id="ferrari_gtc4lusso_t">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Ferari/2018-Ferrari-GTC4Lusso-T-WHITE-3477-2.jpg" alt="product" class="product_img">
@@ -616,7 +626,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item " id="Ferrari_599_GTO">
+                <div class="product_item " id="ferrari_599_gto">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Ferari/2012-Ferrari-599-GTO-YELLOW-5373-2.jpg" alt="product" class="product_img">
@@ -629,7 +639,8 @@
                         <p class="product_gia">24.969.000.000 VND</p>
                         <a  class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
-                </div> <div class="product_item">
+                </div> 
+                <div class="product_item" id="ferrari_488_gtb_grey">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Ferari/2017-Ferrari-488-GTB-GREY-2659-2.jpg" alt="product" class="product_img">
@@ -642,7 +653,8 @@
                         <p class="product_gia">4.862.000.000 VND   </p>
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
-                </div> <div class="product_item">
+                </div> 
+                <div class="product_item" id="ferrari_roma_silver">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Ferari/2022-Ferrari-Roma-SILVER-6422-30.jpg" alt="product" class="product_img">
@@ -655,7 +667,8 @@
                         <p class="product_gia">8.476.000.000 VND</p>
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
-                </div> <div class="product_item">
+                </div> 
+                <div class="product_item hide-on-mobile" id="ferrari_512_tr">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Ferari/1993-Ferrari-512-TR-RED-2252-4.jpg" alt="product" class="product_img">
@@ -668,7 +681,8 @@
                         <p class="product_gia">4.270.000.000 VND</p>
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
-                </div> <div class="product_item">
+                </div>
+                <div class="product_item hide-on-mobile" id="ferrari_sf90_stradale">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Ferari/2022-Ferrari-SF90-RED-0792-2.jpg" alt="product" class="product_img">
@@ -682,7 +696,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                     </div>
-                <div class="product_item">
+                <div class="product_item hide-on-mobile-tablet id="ferrari_812_gts">
                 <ul class="list_car">
                     <li> <a>
                         <img src="./assets/img/content/Ferari/2021-Ferrari-812-GTS-GREEN-7905-4.jpg" alt="product" class="product_img">
@@ -696,7 +710,7 @@
                     <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                  </div>
-                 <div class="product_item">
+                 <div class="product_item hide-on-mobile-tablet" id="ferrari_488_spider">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Ferari/2016-Ferrari-reshoot-488-Spider-BLUE-6736-9.jpg" alt="product" class="product_img">
@@ -710,7 +724,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                     </div>
-                    <div class="product_item viewferari">
+                    <div class="product_item viewferari hide-on-mobile-tablet" id="ferrari_laferrari">
                         <ul class="list_car">
                             <li> <a>
                                 <img src="./assets/img/content/Ferari/2015-Ferrari-LaFerrari-RED-8642-2-resht.jpg" alt="product" class="product_img">
@@ -724,7 +738,7 @@
                             <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                         </div>
                         </div>
-                    <div class="product_item viewferari">
+                    <div class="product_item viewferari hide-on-mobile-tablet" id="ferrari_roma_red">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Ferari/2022-Ferrari-Roma-RED-0167-17-1.jpg" alt="product" class="product_img">
@@ -738,7 +752,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                     </div>
-                    <div class="product_item viewferari">
+                    <div class="product_item viewferari hide-on-mobile-tablet" id="ferrari_488_gtb_red">
                         <ul class="list_car">
                             <li> <a>
                                 <img src="./assets/img/content/Ferari/2016-Ferrari-488-reshoot-GTB-RED-5147-2.jpg" alt="product" class="product_img">
@@ -822,7 +836,7 @@
                         <p class="product_gia">2.891.000.000 VND</p>
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
-                </div> <div class="product_item" id="porsche_cayman_gt4">
+                </div> <div class="product_item hide-on-mobile" id="porsche_cayman_gt4">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Porsche/2016-Porsche-Cayman-GT4-reshoot-YELLOW-1001-2.jpg" alt="product" class="product_img">
@@ -835,7 +849,7 @@
                         <p class="product_gia">1.938.000.000 VND</p>
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
-                </div> <div class="product_item" id="porsche_718_boxster">
+                </div> <div class="product_item hide-on-mobile" id="porsche_718_boxster">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Porsche/2017-Porsche-718-Boxster-ORANGE-0219-2.jpg" alt="product" class="product_img">
@@ -849,7 +863,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item" id="porsche_911_gt2_rs_weissach">
+                <div class="product_item hide-on-mobile-tablet" id="porsche_911_gt2_rs_weissach">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Porsche/2018-Porsche-911-GT2-RS-SILVER-1612-2.jpg" alt="product" class="product_img">
@@ -863,7 +877,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item" id="porsche_carrera_gt">
+                <div class="product_item hide-on-mobile-tablet" id="porsche_carrera_gt">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Porsche/2005-Porsche-Carrera-GT-BLACK-1387-10.jpg" alt="product" class="product_img">
@@ -877,7 +891,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item viewporsche" id="porsche_911_gt3_rs">
+                <div class="product_item viewporsche hide-on-mobile-tablet" id="porsche_911_gt3_rs">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Porsche/2016-Porsche-911-GT3-RS-ORANGE-8089-2.jpg" alt="product" class="product_img">
@@ -892,7 +906,7 @@
                     </div>
                 </div>
                 
-                <div class="product_item viewporsche" id="porsche_959">
+                <div class="product_item viewporsche hide-on-mobile-tablet id="porsche_959">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Porsche/1989-Porsche-959-SILVER-0148-2.jpg" alt="product" class="product_img">
@@ -906,7 +920,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item viewporsche" id="porsche_911_turbo_s_cabriolet">
+                <div class="product_item viewporsche hide-on-mobile-tablet" id="porsche_911_turbo_s_cabriolet">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Porsche/2020-Porsche-911-Turbo-S-Cabriolet-reshoot-GREY-7166-2.jpg" alt="product" class="product_img">
@@ -920,7 +934,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item viewporsche" id="porsche_911_turbo_s">
+                <div class="product_item viewporsche hide-on-mobile-tablet" id="porsche_911_turbo_s">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Porsche/2011-Porsche-911-Turbo-S-BLACK-1139-14.jpg" alt="product" class="product_img">
@@ -934,7 +948,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item viewporsche" id="Porsche_718_Boxster_GTS">
+                <div class="product_item viewporsche hide-on-mobile-tablet" id="Porsche_718_Boxster_GTS">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Porsche/2019-Porsche-718-Boxster-GTS-WHITE-8121-9.jpg" alt="product" class="product_img">
@@ -1020,7 +1034,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item" id="rolls_royce_wraith">
+                <div class="product_item hide-on-mobile" id="rolls_royce_wraith">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/ROLLS-ROYCE/2017-Rolls-Royce-Wraith-Black-badge-BLACK-0808-2.jpg" alt="product" class="product_img">
@@ -1034,7 +1048,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div> 
-                <div class="product_item" id="rolls_royce_cullinan_black_badge_white">
+                <div class="product_item hide-on-mobile" id="rolls_royce_cullinan_black_badge_white">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/ROLLS-ROYCE/2022-Rolls-Royce-Cullinan-WHITE-1620-reshoot-2.jpg" alt="product" class="product_img">
@@ -1048,7 +1062,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item" id="rolls_royce_phantom_drophead_zenith_edition">
+                <div class="product_item hide-on-mobile-tablet" id="rolls_royce_phantom_drophead_zenith_edition">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/ROLLS-ROYCE/2017-Rolls-Royce-Phantom-Drophead-Zenith-Edition-1of-50-WHITE-477-1.jpg" alt="product" class="product_img">
@@ -1062,7 +1076,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item" id="rolls_royce_ghost">
+                <div class="product_item hide-on-mobile-tablet" id="rolls_royce_ghost">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/ROLLS-ROYCE/2022-Rolls-Royce-Ghost-GREY-2702-2.jpg" alt="product" class="product_img">
@@ -1076,7 +1090,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item viewrollsroyce" id="rolls_royce_phantom_coupe_one_of_one">
+                <div class="product_item viewrollsroyce hide-on-mobile-tablet" id="rolls_royce_phantom_coupe_one_of_one">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/ROLLS-ROYCE/2015-Rolls-Royce-Phantom-Coupe-One-of-One-silver-6154-2.jpg" alt="product" class="product_img">
@@ -1090,7 +1104,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item viewrollsroyce" id="rolls_royce_cullinan_blue">
+                <div class="product_item viewrollsroyce hide-on-mobile-tablet" id="rolls_royce_cullinan_blue">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/ROLLS-ROYCE/reshoot-2020-Rolls-Royce-Cullinan-BLUE-0459-8.jpg" alt="product" class="product_img">
@@ -1104,7 +1118,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item viewrollsroyce" id="rolls_royce_wraith_black_badge">
+                <div class="product_item viewrollsroyce hide-on-mobile-tablet" id="rolls_royce_wraith_black_badge">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/ROLLS-ROYCE/2017-Rolls-Royce-Wraith-Black-badge-RED-0817-3.jpg" alt="product" class="product_img">
@@ -1191,7 +1205,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item" id="bugatti_centodieci">
+                <div class="product_item hide-on-mobile" id="bugatti_centodieci">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Bugatti/Bugatti Centodieci11.jpg" alt="product" class="product_img">
@@ -1205,7 +1219,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item" id="bugatti_chiron_pur_sport">
+                <div class="product_item hide-on-mobile" id="bugatti_chiron_pur_sport">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/Bugatti/bugatti-chiron-pur-sport-switzerland-0.jpg" alt="product" class="product_img">
@@ -1310,7 +1324,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div> 
-                <div class="product_item" id=" mclaren_enna_1_of_500_blue ">
+                <div class="product_item hide-on-mobile" id=" mclaren_enna_1_of_500_blue ">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/McLaren/2019-McLaren-Senna-Reshoot-BLUE-0056-4.jpg" alt="product" class="product_img">
@@ -1324,7 +1338,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item" id="mclaren_765lt_1_of_765">
+                <div class="product_item hide-on-mobile" id="mclaren_765lt_1_of_765">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/McLaren/2022-McLaren-765LT-1-OF-765-BLACK-5634-reshoot-10.jpg" alt="product" class="product_img">
@@ -1338,7 +1352,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item" id="mclaren_675lt_1_of_500">
+                <div class="product_item hide-on-mobile-tablet" id="mclaren_675lt_1_of_500">
                     <ul class="list_car">
                         <li> <a>
                             <img src="./assets/img/content/McLaren/2017-McLaren-675LT-SILVER-5990-2.jpg" alt="product" class="product_img">
@@ -1352,7 +1366,7 @@
                         <a href="#" class="product_buy_btn"><i class="fa-solid fa-cart-plus"></i>Buy</a>
                     </div>
                 </div>
-                <div class="product_item" id="mclaren_p1_1_of_375">
+                <div class="product_item hide-on-mobile-tablet" id="mclaren_p1_1_of_375">
                     <ul class="list_car fix">
                         <li><a>
                             <img src="./assets/img/content/McLaren/1170-MCLAREN-P1-2014-ORANGE-EW000039.jpg" alt="product" class="product_img">
@@ -1851,6 +1865,457 @@
 
 
                 </div>
+            </div>
+          
+
+            <div class="nav-tintuc js-tintuc-container">
+                <div class="tintuc-close js-tintuc-close">
+                    <i class="tintuc-close-icon fa-solid fa-xmark" ></i>
+                    
+                </div>
+                <div class="tintuc-container">
+                    <div class="form-congcu">
+                        <div id="search-box">
+                            <input type="text" id="search-text" placeholder="tìm kiếm Tin tức...">
+                            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                             
+                        </div>
+                        <div class="bgactive" id="bgactive">
+
+                        </div>
+                        <div class="trangchu change" id="tintuc">
+                            <a href="#"><i class="fa-solid fa-house-user" ></i></a>
+        
+                        </div>
+                        <div class="video change" id="video">
+                            <a href="#"><i class="fa-solid fa-play" ></i></a>
+        
+                        </div>
+                        <div class="muckhac">
+                            <a href="#"><i class="fa-solid fa-bars"></i></a>
+                        </div>
+        
+                    </div>
+                <!-- noi dung trang chu -->
+                    <div class="forms tintuc" id="forms">
+                        <div class="contents">
+                            <div class="tintuc-xe">
+                                <div class="form-choice">
+                                    <ul>
+                                        <li><span><i class="fa-solid fa-car"></i> </span> <a href="#">Top xe hot nhất trong tháng 10</a></li>
+                                        <li><span> <i class="fa-solid fa-fire"></i></span>  <a href="#">Xe nhập khẩu</a></li>                
+                                        <li><span><i class="fa-sharp fa-solid fa-suitcase">  </i> </span><a href="#">Những mẫu xe được quan tâm nhất</a></li>
+                                        <li><span><i class="fa-sharp fa-solid fa-dollar-sign">  </i> </span><a href="#">Cập nhật giá</a></li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="form-content-tintuc">          dừng xóa, xóa nó bị loạn css 
+                                    <div class="item-tintuc">
+                                        <div class="content-item">
+                                            <h3><a href="#">TC Motor sẽ bán xe Skoda tại Việt Nam từ 2023
+                                                TC Motor sẽ bán xe Skoda tại Việt Nam từ 2023</a></h3>
+                                            <br>
+                                            <p>Nhà phân phối và lắp ráp xe Hyundai tại Việt Nam sẽ phân phối thêm thương hiệu xe đến từ Cộng hòa Czech, bắt đầu nhập xe về bán năm 2023.</p>
+                                            <br>
+                                            <p><i class="fa-solid fa-comment"></i><span style="font-size:12px ;"><i>77</i></span></p>
+                                        </div>
+                                        <div class="img-item">
+                                            <img src="./assets/img/uyen/xe-1.jpg" alt="xe Skoda">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="item-tintuc">
+                                        <div class="content-item">
+                                            <h3><a href="#">TC Motor sẽ bán xe Skoda tại Việt Nam từ 2023
+                                                TC Motor sẽ bán xe Skoda tại Việt Nam từ 2023</a></h3>
+                                            <br>
+                                            <p>Nhà phân phối và lắp ráp xe Hyundai tại Việt Nam sẽ phân phối thêm thương hiệu xe đến từ Cộng hòa Czech, bắt đầu nhập xe về bán năm 2023.</p>
+                                            <br>
+                                            <p><i class="fa-solid fa-comment"></i><span style="font-size:12px ;"><i>77</i></span></p>
+                                        </div>
+                                        <div class="img-item">
+                                            <img src="./assets/img/uyen/xe-1.jpg" alt="xe Skoda">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="item-tintuc">
+                                        <div class="content-item">
+                                            <h3><a href="#">TC Motor sẽ bán xe Skoda tại Việt Nam từ 2023
+                                                TC Motor sẽ bán xe Skoda tại Việt Nam từ 2023</a></h3>
+                                            <br>
+                                            <p>Nhà phân phối và lắp ráp xe Hyundai tại Việt Nam sẽ phân phối thêm thương hiệu xe đến từ Cộng hòa Czech, bắt đầu nhập xe về bán năm 2023.</p>
+                                            <br>
+                                            <p><i class="fa-solid fa-comment"></i><span style="font-size:12px ;"><i>77</i></span></p>
+                                        </div>
+                                        <div class="img-item">
+                                            <img src="./assets/img/uyen/xe-1.jpg"  alt="xe Skoda">
+                                        </div>
+                                    </div>
+                                    <div class="determinate">
+                                        <div class="number-determinate">
+                                            <a href="#" title="chat trực tiếp qua facebook"><i class="fa-brands fa-facebook"></i></a>
+                                        </div>
+                                        <div class="number-determinate">
+                                            <a href="#" title="chat trực tiếp qua instagram"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                        <div class="number-determinate">
+                                            <a href="#"  title="" class="number-deterinate"><i class="fa-brands fa-linkedin"></i></a>
+                
+                                        </div>
+                                        <div class="number-determinate">
+                                            <a href="#" title="Đăng kí lái thử"><i class="fa-solid fa-car"></i></a>
+                                        </div>
+                                        <div class="number-determinate">
+                                            <a href="#" title="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                                        </div>
+                                        
+                
+                                    </div>
+                                </div> -->
+                                <div class="form-content-tintuc">
+                                    <div class="car">
+                                        <div class=" col-s-6 col-s-6">
+                                            <div class="imgnews-1">
+                                                <img src="./assets/img/uyen/lamborghini.jpeg" alt="lamborghini">
+                                            </div>
+                                            <div class="tilte-1">
+                                                <br>
+                                                <h2><a href="#">Giới nhà giàu hết cơ hội mua siêu xe Lamborghini Aventador</a></h2>
+                                                <br>
+                                                <div class="time"><p><i>16:32 20/02/2022</i></p></div>
+                                                <p>Chiếc Lamborghini Aventador cuối cùng vừa lăn bánh ra khỏi dây chuyển sản xuất tại nhà máy Sant'Agata Bolognese, Ý và đã có chủ, đánh dấu sự kết thúc của mẫu siêu xe này sau 11 năm có mặt trên thị trường.</p>
+                                            </div>
+                                        </div>
+                                        <div class=" col-s-6 col-s-6">
+                                            <div class="xe-item">
+                                                <div class="row-tt">
+                                                    <div class="col-s-4 col-s-4">
+                                                        <div class="imgnews-2">
+                                                            <img src="./assets/img/uyen/lam-1.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-s-8 col-s-8">
+                                                        <div class="tilte-2">
+                                                            <a href="#">Cảnh sát chơi lớn chạy siêu xe Ferrari đuổi người vi phạm</a>
+                                                        </div>
+                                                        <div class="time"><p><i>7:12 26/02/2021</i></p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-tt">
+                                                    <div class="col-s-4 col-s-4">
+                                                        <div class="imgnews-2">
+                                                            <img src="./assets/img/uyen/lam-2.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-s-8 col-s-8">
+                                                        <div class="tilte-2">
+                                                            <a href="#">Vụ chìm tàu đại tây dương thiệt hại :3.828 xe</a>
+                                                        </div>
+                                                        <div class="time"><p><i>17:32 02/08/2022</i></p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-tt">
+                                                    <div class="col-s-4 col-s-4">
+                                                        <div class="imgnews-2">
+                                                            <img src="./assets/img/uyen/lam-3.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-s-8 col-s-8">
+                                                        <div class="tilte-2">
+                                                            <a href="#">PUBG Mobile hợp tác với Lamborghini đưa siêu xe vào chiến trường sinh tồn</a>
+                                                        </div>
+                                                        <div class="time"><p><i>10:37 23/05/2022</i></p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-tt">
+                                                    <div class="col-s-4 col-s-4">
+                                                        <div class="imgnews-2">
+                                                            <img src="./assets/img/uyen/lam-4.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-s-8 col-s-8">
+                                                        <div class="tilte-2">
+                                                            <a href="#">Vụ 4000 ô tô chìm trên biển , các hãng lên phương án đèn bù cho khách</a>
+                                                        </div>
+                                                        <div class="time"><p><i>05:21 09/04/2022</i></p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="lamborghini">
+                                        <div class="item">
+                                            <div class="col-s-2 col-s-2">
+                                                <div class="imgnews-1">
+                                                    <img src="./assets/img/uyen/tintuc-1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-s-10 col-s-10">
+                                                <div class="tilte-1">
+                                                    <h3><a href="#">Xác định tàu chìm ở Đại Tây Dương, khách đặt mua tiếp tục chờ đợi </a></h3>
+                                                    <br>
+                                                    <p>Trong số gần 4.000 ô tô thiệt hại sau khi tàu vận tải Felicity Ace chìm xuống Đại Tây Dương có khoảng 1.900 xe Audi, gần 1.100 chiếc Porsche... nhiều khách đặt mua phải đặt hàng lại và chờ hàng tháng trời mới có xe.</p>
+                                                    <div class="time"><p><i>10:02 03/03/2022</i></p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="item">
+                                            <div class="col-s-2 col-s-2">
+                                                <div class="imgnews-1">
+                                                    <img src="./assets/img/uyen/tintuc-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-s-10 col-s-10">
+                                                <div class="tilte-1">
+                                                    <h3><a href="#">Chìm tàu chở hàng ngàn siêu xe trên biển: Lamborghini tái sản xuất Aventador </a></h3>
+                                                    <br>
+                                                    <p>Hãng siêu xe Lamborghini đang rục rịch khởi động lại dây chuyền sản xuất dòng xe Aventador để đền bù cho khách hàng đã đặt mua, sau khi tàu vận tải Felicity Ace chở theo nhiều siêu xe của hãng bốc cháy và chìm ở Đại Tây Dương.</p>
+                                                    <div class="time"><p><i>03:42 06/09/2022</i></p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="item">
+                                            <div class="col-s-2 col-s-2">
+                                                <div class="imgnews-1">
+                                                    <img src="./assets/img/uyen/tintuc-3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-s-10 col-s-10">
+                                                <div class="tilte-1">
+                                                    <h3><a href="#">Xếp thứ 5 PMGC 2021, D’Xavier ẵm giải thưởng khủng </a></h3>
+                                                    <br>
+                                                    <p>Vòng chung kết tổng PMGC 2021 đã tìm ra nhà vô địch là Nova - một đại diện đến từ Trung Quốc. Đại diện duy nhất của Việt Nam là D’Xavier cũng giành được vị trí rất ấn tượng.</p>
+                                                    <div class="time"><p><i>10:32 02/08/2022</i></p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="item">
+                                            <div class="col-s-2 col-s-2">
+                                                <div class="imgnews-1">
+                                                    <img src="./assets/img/uyen/tintuc-4.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-s-10 col-s-10">
+                                                <div class="tilte-1">
+                                                    <h3><a href="#">Siêu xe hàng hiếm Lamborghini Huracan STO đầu tiên về Việt Nam</a></h3>
+                                                    <br>
+                                                    <p>Mặc dù, siêu xe Lamborghini Huracan STO phiên bản đặc biệt không dễ mua trên thị trường quốc tế nhưng vẫn có một chiếc "lọt sổ" về Việt Nam.</p>
+                                                    <div class="time"><p><i>09:56 22/05/2022</i></p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div class="determinate">
+                                        <div class="number-determinate">
+                                            <a href="#" title="chat trực tiếp qua facebook"><i class="fa-brands fa-facebook"></i></a>
+                                        </div>
+                                        <div class="number-determinate">
+                                            <a href="#" title="chat trực tiếp qua instagram"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                        <div class="number-determinate">
+                                            <a href="#"  title="" class="number-deterinate"><i class="fa-brands fa-linkedin"></i></a>
+                
+                                        </div>
+                                        <div class="number-determinate">
+                                            <a href="#" title="Đăng kí lái thử"><i class="fa-solid fa-car"></i></a>
+                                        </div>
+                                        <div class="number-determinate">
+                                            <a href="#" title="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                                        </div>
+                                        
+                
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+
+                <!-- nội dung video -->
+                        <div class="contents">
+                            <div class="tintuc-xe">
+                                <div class="form-choice">
+                                    <ul>
+                                        <li><span><i class="fa-solid fa-car"></i> </span> <a href="#">Top xe hot nhất trong tháng 10</a></li>
+                                        <li><span> <i class="fa-solid fa-fire"></i></span>  <a href="#">Xe nhập khẩu</a></li>                
+                                        <li><span><i class="fa-sharp fa-solid fa-suitcase">  </i> </span><a href="#">Những mẫu xe được quan tâm nhất</a></li>
+                                        <li><span><i class="fa-sharp fa-solid fa-dollar-sign">  </i> </span><a href="#">Cập nhật giá</a></li>
+                                    </ul>
+                                </div>
+                                <div class="form-content-tintuc">
+                                    <div class="video-tt">
+                                        <div class="row-tt">
+                                            <div class="col-s-4 col-s-4">
+                                                <div class="video-item">
+                                                    <iframe src="https://player.vimeo.com/video/282462734?h=80e25fdb15" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                                <div class="tilte-2">
+                                                    <br>
+                                                    <p>Lamborghini Vàng - HOT</p>
+                                                </div>
+                                                <div class="icon">
+                                                    <p><i class="fa-solid fa-thumbs-up"></i><span style="font-size:12px ;"><i>150</i></span></p>
+                                                    <p><i class="fa-solid fa-comment"></i><span style="font-size:12px ;"><i>580</i></span></p> 
+                                                    <p>101N Views</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-s-4 col-s-4">
+                                                <div class="video-item">
+                                                    <iframe src="https://player.vimeo.com/video/332609484?h=4e47cce028"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                                <div class="tilte-2">
+                                                    <br>
+                                                    <p>Siêu Xe Lamborghini</p>
+                                                </div>
+                                                <div class="icon">
+                                                    <p><i class="fa-solid fa-thumbs-up"></i><span style="font-size:12px ;"><i>93</i></span></p>
+                                                    <p><i class="fa-solid fa-comment"></i><span style="font-size:12px ;"><i>158</i></span></p> 
+                                                    <p>136N Views</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-s-4 col-s-4">
+                                                <div class="video-item">
+                                                    <iframe src="https://player.vimeo.com/video/61120272?h=c0ff23a859"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                                <div class="tilte-2">
+                                                    <br>
+                                                    <p>Rolls Royce Wraith</p>
+                                                </div>
+                                                <div class="icon">
+                                                    <p><i class="fa-solid fa-thumbs-up"></i><span style="font-size:12px ;"><i>73</i></span></p>
+                                                    <p><i class="fa-solid fa-comment"></i><span style="font-size:12px ;"><i>89</i></span></p> 
+                                                    <p>298N Views</p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="row-tt">
+                                            <div class="col-s-4 col-s-4">
+                                                <div class="video-item">
+                                                    <iframe src="https://player.vimeo.com/video/30639594?h=c53c48f1be" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                                <div class="tilte-2">
+                                                    <br>
+                                                    <p>MERCEDER</p>
+                                                </div>
+                                                <div class="icon">
+                                                    <p><i class="fa-solid fa-thumbs-up"></i><span style="font-size:12px ;"><i>87</i></span></p>
+                                                    <p><i class="fa-solid fa-comment"></i><span style="font-size:12px ;"><i>321</i></span></p> 
+                                                    <p>65N Views</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-s-4 col-s-4">
+                                                <div class="video-item">
+                                                    <iframe src="https://player.vimeo.com/video/52696923?h=68fb9b0216&color=ffffff&title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                                <div class="tilte-2">
+                                                    <br>
+                                                    <p>Land Rover / Defender</p>
+                                                </div>
+                                                <div class="icon">
+                                                    <p><i class="fa-solid fa-thumbs-up"></i><span style="font-size:12px ;"><i>39</i></span></p>
+                                                    <p><i class="fa-solid fa-comment"></i><span style="font-size:12px ;"><i>92</i></span></p> 
+                                                    <p>186N Views</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-s-4 col-s-4">
+                                                <div class="video-item">
+                                                    <iframe src="https://player.vimeo.com/video/37868785?h=1006a3c4df"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                                <div class="tilte-2">
+                                                    <br>
+                                                    <p>Lexus LFA</p>
+                                                </div>
+                                                <div class="icon">
+                                                    <p><i class="fa-solid fa-thumbs-up"></i><span style="font-size:12px ;"><i>83</i></span></p>
+                                                    <p><i class="fa-solid fa-comment"></i><span style="font-size:12px ;"><i>82</i></span></p> 
+                                                    <p>183N Views</p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="row-tt">
+                                            <div class="col-s-4 col-s-4">
+                                                <div class="video-item">
+                                                    <iframe src="https://player.vimeo.com/video/316347125?h=391444c096"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                                <div class="tilte-2">
+                                                    <br>
+                                                    <p>PROJECT : LAMBORGHINI - SC18</p>
+                                                </div>
+                                                <div class="icon">
+                                                    <p><i class="fa-solid fa-thumbs-up"></i><span style="font-size:12px ;"><i>78</i></span></p>
+                                                    <p><i class="fa-solid fa-comment"></i><span style="font-size:12px ;"><i>98</i></span></p> 
+                                                    <p>156N Views</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-s-4 col-s-4">
+                                                <div class="video-item">
+                                                    <iframe src="https://player.vimeo.com/video/54029274?h=df842d1a6b"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                                <div class="tilte-2">
+                                                    <br>
+                                                    <p>MINI COOPER s</p>
+                                                </div>
+                                                <div class="icon">
+                                                    <p><i class="fa-solid fa-thumbs-up"></i><span style="font-size:12px ;"><i>83</i></span></p>
+                                                    <p><i class="fa-solid fa-comment"></i><span style="font-size:12px ;"><i>97</i></span></p> 
+                                                    <p>87N Views</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-s-4 col-s-4">
+                                                <div class="video-item">
+                                                    <iframe src="https://player.vimeo.com/video/59123361?h=1d9c1e49b8"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                                <div class="tilte-2">
+                                                    <br>
+                                                    <p>Lamborghini Matte Brown Wrap</p>
+                                                </div>
+                                                <div class="icon">
+                                                    <p><i class="fa-solid fa-thumbs-up"></i><span style="font-size:12px ;"><i>105</i></span></p>
+                                                    <p><i class="fa-solid fa-comment"></i><span style="font-size:12px ;"><i>80</i></span></p> 
+                                                    <p>6N Views</p>
+                                                </div>
+                                            </div>
+                                           
+                                           
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="determinate">
+                                        <div class="number-determinate">
+                                            <a href="#" title="chat trực tiếp qua facebook"><i class="fa-brands fa-facebook"></i></a>
+                                        </div>
+                                        <div class="number-determinate">
+                                            <a href="#" title="chat trực tiếp qua instagram"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                        <div class="number-determinate">
+                                            <a href="#"  title="" class="number-deterinate"><i class="fa-brands fa-linkedin"></i></a>
+                
+                                        </div>
+                                        <div class="number-determinate">
+                                            <a href="#" title="Đăng kí lái thử"><i class="fa-solid fa-car"></i></a>
+                                        </div>
+                                        <div class="number-determinate">
+                                            <a href="#" title="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                                        </div>
+                                        
+                
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+            
+                        </div>
+                    
+                    </div>
+                </div>
+
+              
             </div>
 
 
@@ -5196,6 +5661,757 @@
                         </p>
                     </div> 
     
+                </div>
+            </div>
+
+
+            <!-- ferari -->
+            <div class="infor__list ferrari_gtc4lusso_t">
+                <div class="login-close js-infor-close">
+                    <i class="login-close-icon fa-solid fa-xmark" ></i>
+                </div>
+                <div class="infor__container">
+                    <div class="infor__content">
+                        <h1 class="product-section-title"> Ferrari GTC4Lusso T </h1>
+                        <h3 class="infor-text">Thông số sản phẩm</h3>
+                        <div class="product-price-item">
+                            <table class="infor__table">
+                                <tr>
+                                    <td>Kiểu dáng</td>
+                                    <td>Coupe (2 cửa)</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Động cơ</td>
+                                    <td>V8 3.8L</td>
+                                </tr>
+                                <tr>
+                                    <td>Dung tích (cc)</td>
+                                    <td>6.498</td>
+                                </tr>
+                                <tr>
+                                    <td>Chỗ ngồi</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Năm SX</td>
+                                    <td>2003</td>
+                                </tr>
+                            </table>
+                            <p class="infor__text">
+                                Đây là một trong những mẫu xe khiến bao người dù 
+                                có thèm khát được chạm vào thế nào đi nữa cũng phải ngậm
+                                 ngùi nhìn từ xa. 
+                            </p>
+                            <span class="product-price-label">Giá Bán <span class="product-price-value">4.763.000.000  VND</span></span>
+                            <div class="infor__shoping">
+                                <div class="shoping__item">
+                                    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/hyhnpiza.json"
+                                        trigger="hover"
+                                        style="width:35px;height:35px"
+                                        colors="primary:#e93e3e"
+                                        class="shoping__icon">
+                                    </lord-icon> 
+                                    <p class="shoping__text">Thêm vào giỏ hàng</p>
+    
+                                </div>
+                                <button class="infor__btn">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infor__slider">
+                        <img src="./assets/img/Infor_Product/Ferrari GTC4Lusso T/pic1.jpg" alt="" class="img_ferrari_gtc4lusso_t ">
+                        <p>
+                            <img class="infor_img" id="img_ferrari_gtc4lusso_t" src="./assets/img/Infor_Product/Ferrari GTC4Lusso T/pic1.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_gtc4lusso_t" src="./assets/img/Infor_Product/Ferrari GTC4Lusso T/pic2.jpg" alt="" width="18%">
+                            <img class="infor_img" id="img_ferrari_gtc4lusso_t" src="./assets/img/Infor_Product/Ferrari GTC4Lusso T/pic3.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_gtc4lusso_t" src="./assets/img/Infor_Product/Ferrari GTC4Lusso T/pic4.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_gtc4lusso_t" src="./assets/img/Infor_Product/Ferrari GTC4Lusso T/pic5.jpg" alt="" width="18%"/>
+                        </p>
+                    </div> 
+    
+                </div>
+            </div>
+            <div class="infor__list ferrari_599_gto">
+                <div class="login-close js-infor-close">
+                    <i class="login-close-icon fa-solid fa-xmark" ></i>
+                </div>
+                <div class="infor__container">
+                    <div class="infor__content">
+                        <h1 class="product-section-title">Ferrari 599 GTO </h1>
+                        <h3 class="infor-text">Thông số sản phẩm</h3>
+                        <div class="product-price-item">
+                            <table class="infor__table">
+                                <tr>
+                                    <td>Kiểu dáng</td>
+                                    <td>Coupe (2 cửa)</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Động cơ</td>
+                                    <td>V8 3.8L</td>
+                                </tr>
+                                <tr>
+                                    <td>Dung tích (cc)</td>
+                                    <td>6.498</td>
+                                </tr>
+                                <tr>
+                                    <td>Chỗ ngồi</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Năm SX</td>
+                                    <td>2003</td>
+                                </tr>
+                            </table>
+                            <p class="infor__text">
+                                Đây là một trong những mẫu xe khiến bao người dù 
+                                có thèm khát được chạm vào thế nào đi nữa cũng phải ngậm
+                                 ngùi nhìn từ xa. 
+                            </p>
+                            <span class="product-price-label">Giá Bán <span class="product-price-value">24.969.000.000 VND</span></span>
+                            <div class="infor__shoping">
+                                <div class="shoping__item">
+                                    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/hyhnpiza.json"
+                                        trigger="hover"
+                                        style="width:35px;height:35px"
+                                        colors="primary:#e93e3e"
+                                        class="shoping__icon">
+                                    </lord-icon> 
+                                    <p class="shoping__text">Thêm vào giỏ hàng</p>
+    
+                                </div>
+                                <button class="infor__btn">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infor__slider">
+                        <img src="./assets/img/Infor_Product/Ferrari 599 GTO/pic1.jpg" alt="" class="img_ferrari_599_gto ">
+                        <p>
+                            <img class="infor_img" id="img_ferrari_599_gto" src="./assets/img/Infor_Product/Ferrari 599 GTO/pic1.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_599_gto" src="./assets/img/Infor_Product/Ferrari 599 GTO/pic2.jpg" alt="" width="18%">
+                            <img class="infor_img" id="img_ferrari_599_gto" src="./assets/img/Infor_Product/Ferrari 599 GTO/pic3.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_599_gto" src="./assets/img/Infor_Product/Ferrari 599 GTO/pic4.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_599_gto" src="./assets/img/Infor_Product/Ferrari 599 GTO/pic5.jpg" alt="" width="18%"/>
+                        </p>
+                    </div> 
+    
+                </div>
+            </div>
+            <div class="infor__list ferrari_488_gtb_grey">
+                <div class="login-close js-infor-close">
+                    <i class="login-close-icon fa-solid fa-xmark" ></i>
+                </div>
+                <div class="infor__container">
+                    <div class="infor__content">
+                        <h1 class="product-section-title">Ferrari 488 GTB - Grey </h1>
+                        <h3 class="infor-text">Thông số sản phẩm</h3>
+                        <div class="product-price-item">
+                            <table class="infor__table">
+                                <tr>
+                                    <td>Kiểu dáng</td>
+                                    <td>Coupe (2 cửa)</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Động cơ</td>
+                                    <td>V12 6.5L</td>
+                                </tr>
+                                <tr>
+                                    <td>Dung tích (cc)</td>
+                                    <td>6.498</td>
+                                </tr>
+                                <tr>
+                                    <td>Chỗ ngồi</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Năm SX</td>
+                                    <td>2003</td>
+                                </tr>
+                            </table>
+                            <p class="infor__text">
+                                Đây là một trong những mẫu xe khiến bao người dù 
+                                có thèm khát được chạm vào thế nào đi nữa cũng phải ngậm
+                                 ngùi nhìn từ xa.  
+                            </p>
+                            <span class="product-price-label">Giá Bán <span class="product-price-value">4.862.000.000 VND</span></span>
+                            <div class="infor__shoping">
+                                <div class="shoping__item">
+                                    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/hyhnpiza.json"
+                                        trigger="hover"
+                                        style="width:35px;height:35px"
+                                        colors="primary:#e93e3e"
+                                        class="shoping__icon">
+                                    </lord-icon> 
+                                    <p class="shoping__text">Thêm vào giỏ hàng</p>
+    
+                                </div>
+                                <button class="infor__btn">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infor__slider">
+                        <img src="./assets/img/Infor_Product/Ferrari 488 GTB - Grey/pic1.jpg" alt="" class="img_ferrari_488_gtb_grey">
+                        <p>
+                            <img class="infor_img" id="img_ferrari_488_gtb_grey" src="./assets/img/Infor_Product/Ferrari 488 GTB - Grey/pic1.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_488_gtb_grey" src="./assets/img/Infor_Product/Ferrari 488 GTB - Grey/pic2.jpg" alt="" width="18%">
+                            <img class="infor_img" id="img_ferrari_488_gtb_grey" src="./assets/img/Infor_Product/Ferrari 488 GTB - Grey/pic3.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_488_gtb_grey" src="./assets/img/Infor_Product/Ferrari 488 GTB - Grey/pic4.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_488_gtb_grey" src="./assets/img/Infor_Product/Ferrari 488 GTB - Grey/pic5.jpg" alt="" width="18%"/>
+                        </p>
+                    </div> 
+                </div>
+            </div>
+            <div class="infor__list ferrari_roma_silver">
+                <div class="login-close js-infor-close">
+                    <i class="login-close-icon fa-solid fa-xmark" ></i>
+                </div>
+                <div class="infor__container">
+                    <div class="infor__content">
+                        <h1 class="product-section-title">Ferrari_Roma Silver </h1>
+                        <h3 class="infor-text">Thông số sản phẩm</h3>
+                        <div class="product-price-item">
+                            <table class="infor__table">
+                                <tr>
+                                    <td>Kiểu dáng</td>
+                                    <td>Coupe (2 cửa)</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Động cơ</td>
+                                    <td>V12 6.5L</td>
+                                </tr>
+                                <tr>
+                                    <td>Dung tích (cc)</td>
+                                    <td>6.498</td>
+                                </tr>
+                                <tr>
+                                    <td>Chỗ ngồi</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Năm SX</td>
+                                    <td>2003</td>
+                                </tr>
+                            </table>
+                            <p class="infor__text">
+                                Đây là một trong những mẫu xe khiến bao người dù 
+                                có thèm khát được chạm vào thế nào đi nữa cũng phải ngậm
+                                 ngùi nhìn từ xa. Lamborghini không hề rẻ, đặc biệt là dòng xe
+                                  Lamborghini Veneno. 
+                            </p>
+                            <span class="product-price-label">Giá Bán <span class="product-price-value">10,000,000,000 VND</span></span>
+                            <div class="infor__shoping">
+                                <div class="shoping__item">
+                                    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/hyhnpiza.json"
+                                        trigger="hover"
+                                        style="width:35px;height:35px"
+                                        colors="primary:#e93e3e"
+                                        class="shoping__icon">
+                                    </lord-icon> 
+                                    <p class="shoping__text">Thêm vào giỏ hàng</p>
+    
+                                </div>
+                                <button class="infor__btn">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infor__slider">
+                        <img src="./assets/img/Infor_Product/Ferrari Roma - Silver/pic1.jpg" alt="" class="img_ferrari_roma_silver">
+                        <p>
+                            <img class="infor_img" id="img_ferrari_roma_silver" src="./assets/img/Infor_Product/Ferrari Roma - Silver/pic1.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_roma_silver" src="./assets/img/Infor_Product/Ferrari Roma - Silver/pic2.jpg" alt="" width="18%">
+                            <img class="infor_img" id="img_ferrari_roma_silver" src="./assets/img/Infor_Product/Ferrari Roma - Silver/pic3.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_roma_silver" src="./assets/img/Infor_Product/Ferrari Roma - Silver/pic4.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_roma_silver" src="./assets/img/Infor_Product/Ferrari Roma - Silver/pic5.jpg" alt="" width="18%"/>
+                        </p>
+                    </div> 
+    
+                </div>
+            </div>
+            <div class="infor__list ferrari_512_tr">
+                <div class="login-close js-infor-close">
+                    <i class="login-close-icon fa-solid fa-xmark" ></i>
+                </div>
+                <div class="infor__container">
+                    <div class="infor__content">
+                        <h1 class="product-section-title">Ferrari 512 TR</h1>
+                        <h3 class="infor-text">Thông số sản phẩm</h3>
+                        <div class="product-price-item">
+                            <table class="infor__table">
+                                <tr>
+                                    <td>Kiểu dáng</td>
+                                    <td>Coupe (2 cửa)</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Động cơ</td>
+                                    <td>V12 6.5L</td>
+                                </tr>
+                                <tr>
+                                    <td>Dung tích (cc)</td>
+                                    <td>6.498</td>
+                                </tr>
+                                <tr>
+                                    <td>Chỗ ngồi</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Năm SX</td>
+                                    <td>2003</td>
+                                </tr>
+                            </table>
+                            <p class="infor__text">
+                                Đây là một trong những mẫu xe khiến bao người dù 
+                                có thèm khát được chạm vào thế nào đi nữa cũng phải ngậm
+                                 ngùi nhìn từ xa. 
+                            </p>
+                            <span class="product-price-label">Giá Bán <span class="product-price-value">4.270.000.000  VND</span></span>
+                            <div class="infor__shoping">
+                                <div class="shoping__item">
+                                    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/hyhnpiza.json"
+                                        trigger="hover"
+                                        style="width:35px;height:35px"
+                                        colors="primary:#e93e3e"
+                                        class="shoping__icon">
+                                    </lord-icon> 
+                                    <p class="shoping__text">Thêm vào giỏ hàng</p>
+    
+                                </div>
+                                <button class="infor__btn">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infor__slider">
+                        <img src="./assets/img/Infor_Product/Ferrari 512 TR/pic1.jpg" alt="" class="img_ferrari_512_tr ">
+                        <p>
+                            <img class="infor_img" id="img_ferrari_512_tr" src="./assets/img/Infor_Product/Ferrari 512 TR/pic1.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_512_tr" src="./assets/img/Infor_Product/Ferrari 512 TR/pic2.jpg" alt="" width="18%">
+                            <img class="infor_img" id="img_ferrari_512_tr" src="./assets/img/Infor_Product/Ferrari 512 TR/pic3.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_512_tr" src="./assets/img/Infor_Product/Ferrari 512 TR/pic4.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_512_tr" src="./assets/img/Infor_Product/Ferrari 512 TR/pic5.jpg" alt="" width="18%"/>
+                        </p>
+                    </div> 
+    
+                </div>
+            </div>
+            <div class="infor__list ferrari_sf90_stradale">
+                <div class="login-close js-infor-close">
+                    <i class="login-close-icon fa-solid fa-xmark" ></i>
+                </div>
+                <div class="infor__container">
+                    <div class="infor__content">
+                        <h1 class="product-section-title">Ferrari SF90 Stradale </h1>
+                        <h3 class="infor-text">Thông số sản phẩm</h3>
+                        <div class="product-price-item">
+                            <table class="infor__table">
+                                <tr>
+                                    <td>Kiểu dáng</td>
+                                    <td>Coupe (2 cửa)</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Động cơ</td>
+                                    <td>V12 6.5L</td>
+                                </tr>
+                                <tr>
+                                    <td>Dung tích (cc)</td>
+                                    <td>6.498</td>
+                                </tr>
+                                <tr>
+                                    <td>Chỗ ngồi</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Năm SX</td>
+                                    <td>2003</td>
+                                </tr>
+                            </table>
+                            <p class="infor__text">
+                                Đây là một trong những mẫu xe khiến bao người dù 
+                                có thèm khát được chạm vào thế nào đi nữa cũng phải ngậm
+                                 ngùi nhìn từ xa.  
+                            </p>
+                            <span class="product-price-label">Giá Bán <span class="product-price-value">17.084.000.000  VND</span></span>
+                            <div class="infor__shoping">
+                                <div class="shoping__item">
+                                    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/hyhnpiza.json"
+                                        trigger="hover"
+                                        style="width:35px;height:35px"
+                                        colors="primary:#e93e3e"
+                                        class="shoping__icon">
+                                    </lord-icon> 
+                                    <p class="shoping__text">Thêm vào giỏ hàng</p>
+    
+                                </div>
+                                <button class="infor__btn">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infor__slider">
+                        <img src="./assets/img/Infor_Product/Ferrari SF90 Stradale/pic1.jpg" alt="" class="img_ferrari_sf90_stradale ">
+                        <p>
+                            <img class="infor_img" id="img_ferrari_sf90_stradale" src="./assets/img/Infor_Product/Ferrari SF90 Stradale/pic1.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_sf90_stradale" src="./assets/img/Infor_Product/Ferrari SF90 Stradale/pic2.jpg" alt="" width="18%">
+                            <img class="infor_img" id="img_ferrari_sf90_stradale" src="./assets/img/Infor_Product/Ferrari SF90 Stradale/pic3.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_sf90_stradale" src="./assets/img/Infor_Product/Ferrari SF90 Stradale/pic4.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_sf90_stradale" src="./assets/img/Infor_Product/Ferrari SF90 Stradale/pic5.jpg" alt="" width="18%"/>
+                        </p>
+                    </div> 
+    
+                </div>
+            </div>
+            <div class="infor__list ferrari_812_gts">
+                <div class="login-close js-infor-close">
+                    <i class="login-close-icon fa-solid fa-xmark" ></i>
+                </div>
+                <div class="infor__container">
+                    <div class="infor__content">
+                        <h1 class="product-section-title">Porsche Panamera Platinum Edition </h1>
+                        <h3 class="infor-text">Thông số sản phẩm</h3>
+                        <div class="product-price-item">
+                            <table class="infor__table">
+                                <tr>
+                                    <td>Kiểu dáng</td>
+                                    <td>Coupe (2 cửa)</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Động cơ</td>
+                                    <td>V12 6.5L</td>
+                                </tr>
+                                <tr>
+                                    <td>Dung tích (cc)</td>
+                                    <td>6.498</td>
+                                </tr>
+                                <tr>
+                                    <td>Chỗ ngồi</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Năm SX</td>
+                                    <td>2003</td>
+                                </tr>
+                            </table>
+                            <p class="infor__text">
+                                Đây là một trong những mẫu xe khiến bao người dù 
+                                có thèm khát được chạm vào thế nào đi nữa cũng phải ngậm
+                                 ngùi nhìn từ xa. Lamborghini không hề rẻ, đặc biệt là dòng xe
+                                  Lamborghini Veneno. 
+                            </p>
+                            <span class="product-price-label">Giá Bán <span class="product-price-value">9,000,000,000 VND</span></span>
+                            <div class="infor__shoping">
+                                <div class="shoping__item">
+                                    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/hyhnpiza.json"
+                                        trigger="hover"
+                                        style="width:35px;height:35px"
+                                        colors="primary:#e93e3e"
+                                        class="shoping__icon">
+                                    </lord-icon> 
+                                    <p class="shoping__text">Thêm vào giỏ hàng</p>
+    
+                                </div>
+                                <button class="infor__btn">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infor__slider">
+                        <img src="./assets/img/Infor_Product/Ferrari 812 GTS/pic1.jpg" alt="" class="img_ferrari_812_gts ">
+                        <p>
+                            <img class="infor_img" id="img_ferrari_812_gts" src="./assets/img/Infor_Product/Ferrari 812 GTS/pic1.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_812_gts" src="./assets/img/Infor_Product/Ferrari 812 GTS/pic2.jpg" alt="" width="18%">
+                            <img class="infor_img" id="img_ferrari_812_gts" src="./assets/img/Infor_Product/Ferrari 812 GTS/pic3.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_812_gts" src="./assets/img/Infor_Product/Ferrari 812 GTS/pic4.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_812_gts" src="./assets/img/Infor_Product/Ferrari 812 GTS/pic5.jpg" alt="" width="18%"/>
+                        </p>
+                    </div> 
+    
+                </div>
+            </div>
+            <div class="infor__list ferrari_488_spider">
+                <div class="login-close js-infor-close">
+                    <i class="login-close-icon fa-solid fa-xmark" ></i>
+                </div>
+                <div class="infor__container">
+                    <div class="infor__content">
+                        <h1 class="product-section-title">  Ferrari 488 Spider </h1>
+                        <h3 class="infor-text">Thông số sản phẩm</h3>
+                        <div class="product-price-item">
+                            <table class="infor__table">
+                                <tr>
+                                    <td>Kiểu dáng</td>
+                                    <td>Coupe (2 cửa)</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Động cơ</td>
+                                    <td>V12 6.5L</td>
+                                </tr>
+                                <tr>
+                                    <td>Dung tích (cc)</td>
+                                    <td>6.498</td>
+                                </tr>
+                                <tr>
+                                    <td>Chỗ ngồi</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Năm SX</td>
+                                    <td>2003</td>
+                                </tr>
+                            </table>
+                            <p class="infor__text">
+                                Đây là một trong những mẫu xe khiến bao người dù 
+                                có thèm khát được chạm vào thế nào đi nữa cũng phải ngậm
+                                 ngùi nhìn từ xa.  
+                            </p>
+                            <span class="product-price-label">Giá Bán <span class="product-price-value">5.052.000.000 VND</span></span>
+                            <div class="infor__shoping">
+                                <div class="shoping__item">
+                                    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/hyhnpiza.json"
+                                        trigger="hover"
+                                        style="width:35px;height:35px"
+                                        colors="primary:#e93e3e"
+                                        class="shoping__icon">
+                                    </lord-icon> 
+                                    <p class="shoping__text">Thêm vào giỏ hàng</p>
+    
+                                </div>
+                                <button class="infor__btn">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infor__slider">
+                        <img src="./assets/img/Infor_Product/Ferrari 488 Spider/pic1.jpg" alt="" class="img_ferrari_488_spider ">
+                        <p>
+                            <img class="infor_img" id="img_ferrari_488_spider" src="./assets/img/Infor_Product/Ferrari 488 Spider/pic1.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_488_spider" src="./assets/img/Infor_Product/Ferrari 488 Spider/pic2.jpg" alt="" width="18%">
+                            <img class="infor_img" id="img_ferrari_488_spider" src="./assets/img/Infor_Product/Ferrari 488 Spider/pic3.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_488_spider" src="./assets/img/Infor_Product/Ferrari 488 Spider/pic4.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_488_spider" src="./assets/img/Infor_Product/Ferrari 488 Spider/pic5.jpg" alt="" width="18%"/>
+                        </p>
+                    </div> 
+    
+                </div>
+            </div>
+            <div class="infor__list ferrari_laferrari">
+                <div class="login-close js-infor-close">
+                    <i class="login-close-icon fa-solid fa-xmark" ></i>
+                </div>
+                <div class="infor__container">
+                    <div class="infor__content">
+                        <h1 class="product-section-title">Ferrari LaFerrari - 1 of 499 </h1>
+                        <h3 class="infor-text">Thông số sản phẩm</h3>
+                        <div class="product-price-item">
+                            <table class="infor__table">
+                                <tr>
+                                    <td>Kiểu dáng</td>
+                                    <td>Coupe (2 cửa)</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Động cơ</td>
+                                    <td>V12 6.5L</td>
+                                </tr>
+                                <tr>
+                                    <td>Dung tích (cc)</td>
+                                    <td>6.498</td>
+                                </tr>
+                                <tr>
+                                    <td>Chỗ ngồi</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Năm SX</td>
+                                    <td>2003</td>
+                                </tr>
+                            </table>
+                            <p class="infor__text">
+                                Đây là một trong những mẫu xe khiến bao người dù 
+                                có thèm khát được chạm vào thế nào đi nữa cũng phải ngậm
+                                 ngùi nhìn từ xa.  
+                            </p>
+                            <span class="product-price-label">Giá Bán <span class="product-price-value">33.320.000.000  VND</span></span>
+                            <div class="infor__shoping">
+                                <div class="shoping__item">
+                                    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/hyhnpiza.json"
+                                        trigger="hover"
+                                        style="width:35px;height:35px"
+                                        colors="primary:#e93e3e"
+                                        class="shoping__icon">
+                                    </lord-icon> 
+                                    <p class="shoping__text">Thêm vào giỏ hàng</p>
+    
+                                </div>
+                                <button class="infor__btn">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infor__slider">
+                        <img src="./assets/img/Infor_Product/Ferrari LaFerrari/pic1.jpg" alt="" class="img_ferrari_laferrari">
+                        <p>
+                            <img class="infor_img" id="img_ferrari_laferrari" src="./assets/img/Infor_Product/Ferrari LaFerrari/pic1.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_laferrari" src="./assets/img/Infor_Product/Ferrari LaFerrari/pic2.jpg" alt="" width="18%">
+                            <img class="infor_img" id="img_ferrari_laferrari" src="./assets/img/Infor_Product/Ferrari LaFerrari/pic3.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_laferrari" src="./assets/img/Infor_Product/Ferrari LaFerrari/pic4.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_laferrari" src="./assets/img/Infor_Product/Ferrari LaFerrari/pic5.jpg" alt="" width="18%"/>
+                        </p>
+                    </div> 
+    
+                </div>
+            </div>
+            <div class="infor__list ferrari_roma_red">
+                <div class="login-close js-infor-close">
+                    <i class="login-close-icon fa-solid fa-xmark" ></i>
+                </div>
+                <div class="infor__container">
+                    <div class="infor__content">
+                        <h1 class="product-section-title"> Ferrari Roma – Red </h1>
+                        <h3 class="infor-text">Thông số sản phẩm</h3>
+                        <div class="product-price-item">
+                            <table class="infor__table">
+                                <tr>
+                                    <td>Kiểu dáng</td>
+                                    <td>Coupe (2 cửa)</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Động cơ</td>
+                                    <td>V12 6.5L</td>
+                                </tr>
+                                <tr>
+                                    <td>Dung tích (cc)</td>
+                                    <td>6.498</td>
+                                </tr>
+                                <tr>
+                                    <td>Chỗ ngồi</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Năm SX</td>
+                                    <td>2003</td>
+                                </tr>
+                            </table>
+                            <p class="infor__text">
+                                Đây là một trong những mẫu xe khiến bao người dù 
+                                có thèm khát được chạm vào thế nào đi nữa cũng phải ngậm
+                                 ngùi nhìn từ xa. 
+                            </p>
+                            <span class="product-price-label">Giá Bán <span class="product-price-value">8.345.000.000  VND</span></span>
+                            <div class="infor__shoping">
+                                <div class="shoping__item">
+                                    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/hyhnpiza.json"
+                                        trigger="hover"
+                                        style="width:35px;height:35px"
+                                        colors="primary:#e93e3e"
+                                        class="shoping__icon">
+                                    </lord-icon> 
+                                    <p class="shoping__text">Thêm vào giỏ hàng</p>
+    
+                                </div>
+                                <button class="infor__btn">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infor__slider">
+                        <img src="./assets/img/Infor_Product/Ferrari Roma - Red/pic1.jpg" alt="" class="img_ferrari_roma_red">
+                        <p>
+                            <img class="infor_img" id="img_ferrari_roma_red" src="./assets/img/Infor_Product/Ferrari Roma - Red/pic1.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_roma_red" src="./assets/img/Infor_Product/Ferrari Roma - Red/pic2.jpg" alt="" width="18%">
+                            <img class="infor_img" id="img_ferrari_roma_red" src="./assets/img/Infor_Product/Ferrari Roma - Red/pic3.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_roma_red" src="./assets/img/Infor_Product/Ferrari Roma - Red/pic4.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_roma_red" src="./assets/img/Infor_Product/Ferrari Roma - Red/pic5.jpg" alt="" width="18%"/>
+                        </p>
+                    </div> 
+    
+                </div>
+            </div>
+            <div class="infor__list ferrari_488_gtb_red">
+                <div class="login-close js-infor-close">
+                    <i class="login-close-icon fa-solid fa-xmark" ></i>
+                </div>
+                <div class="infor__container">
+                    <div class="infor__content">
+                        <h1 class="product-section-title">Ferrari 488 GTB – Red </h1>
+                        <h3 class="infor-text">Thông số sản phẩm</h3>
+                        <div class="product-price-item">
+                            <table class="infor__table">
+                                <tr>
+                                    <td>Kiểu dáng</td>
+                                    <td>Coupe (2 cửa)</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Động cơ</td>
+                                    <td>V12 6.5L</td>
+                                </tr>
+                                <tr>
+                                    <td>Dung tích (cc)</td>
+                                    <td>6.498</td>
+                                </tr>
+                                <tr>
+                                    <td>Chỗ ngồi</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Năm SX</td>
+                                    <td>2003</td>
+                                </tr>
+                            </table>
+                            <p class="infor__text">
+                                Đây là một trong những mẫu xe khiến bao người dù 
+                                có thèm khát được chạm vào thế nào đi nữa cũng phải ngậm
+                                 ngùi nhìn từ xa.  
+                            </p>
+                            <span class="product-price-label">Giá Bán <span class="product-price-value">4.730.000.000  VND</span></span>
+                            <div class="infor__shoping">
+                                <div class="shoping__item">
+                                    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/hyhnpiza.json"
+                                        trigger="hover"
+                                        style="width:35px;height:35px"
+                                        colors="primary:#e93e3e"
+                                        class="shoping__icon">
+                                    </lord-icon> 
+                                    <p class="shoping__text">Thêm vào giỏ hàng</p>
+    
+                                </div>
+                                <button class="infor__btn">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infor__slider">
+                        <img src="./assets/img/Infor_Product/Ferrari 488 GTB – Red/pic1.jpg" alt="" class="img_ferrari_488_gtb_red">
+                        <p>
+                            <img class="infor_img" id="img_ferrari_488_gtb_red" src="./assets/img/Infor_Product/Ferrari 488 GTB – Red/pic1.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_488_gtb_red" src="./assets/img/Infor_Product/Ferrari 488 GTB – Red/pic2.jpg" alt="" width="18%">
+                            <img class="infor_img" id="img_ferrari_488_gtb_red" src="./assets/img/Infor_Product/Ferrari 488 GTB – Red/pic3.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_488_gtb_red" src="./assets/img/Infor_Product/Ferrari 488 GTB – Red/pic4.jpg" alt="" width="18%"/>
+                            <img class="infor_img" id="img_ferrari_488_gtb_red" src="./assets/img/Infor_Product/Ferrari 488 GTB – Red/pic5.jpg" alt="" width="18%"/>
+                        </p>
+                    </div> 
                 </div>
             </div>
             

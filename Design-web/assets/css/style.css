@@ -7,7 +7,7 @@ header{
     border-bottom: 1px solid transparent;
     box-shadow: 0 3px 13px 0 rgb(0 0 0 / 3%);
     /* padding: 0 20px; */
-    background-image: linear-gradient(to right,rgb(6, 1, 12),#354d8f);
+    background-image: radial-gradient(#320643,#140534);
     position: fixed;
     top: 0;
     width: 100vw;
@@ -36,7 +36,9 @@ header{
     margin: 0;
     height: 100%;
 }
-
+.nav input{
+    display: none;
+ }
 .nav__item{
     display: block;
     position: relative;
@@ -91,7 +93,9 @@ header{
     background-color: currentColor;
     width: 100%;
 }
-
+.hide-on-PC{
+    display: none;
+}
 .subnav{
     display: none;
     position: absolute;
@@ -100,7 +104,7 @@ header{
     box-shadow: 0 3px 13px 0 rgb(0 0 0 / 3%);
     animation: drop-down linear forwards .4s;
     transform-origin: top center;
-    z-index: 1;
+    z-index: 3;
 }
 
 .nav__item:hover  .subnav{
@@ -448,13 +452,15 @@ header{
 .account-login,
 .account-register{
     border: none;
-    background-image: linear-gradient(to right,#5F9DF7,#FF8787);
+    /* background-image: linear-gradient(to right,#5F9DF7,#FF8787); */
+    background: linear-gradient(45deg,#d350db,rgb(86, 63, 236),#d350db);
     border-radius: 10px;
     width: 45%;
     height: 36px;
     color: #fff;
     cursor: pointer;
 }
+
 .account-login:hover,
 .account-register:hover{
     color: var(--primary-color);

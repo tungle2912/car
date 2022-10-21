@@ -1,7 +1,8 @@
 /*Begin_product*/
 .container{
     width: 100%;
-    background-color: #302e2e;
+    background-image: radial-gradient(#330b43,#160931);
+
     padding-bottom: 32px;
     
 }
@@ -66,7 +67,10 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: #302e2e;
+    /* background-color: #302e2e; */
+    /* background-image: radial-gradient(#330b43,#160931); */
+    background-color: transparent;
+
     font-family: MBCorpo Title,sans-serif;
     
 }
@@ -87,7 +91,10 @@
     color: #fff;
     text-align: center;
     font-size: 32px;
-    background-color: #302e2e;
+    /* background-color: #302e2e; */
+    /* background-image: radial-gradient(#330b43,#160931); */
+    background-color: transparent;
+
     line-height: 64px;
     font-family: MBCorpo Title,sans-serif;
     font-weight: 400;
@@ -102,7 +109,7 @@ ul.list_car li{
     
 }
 ul.list_car li a img{
-    max-width: 270px;
+    max-width: 100%;
     max-height: 200px;
     border-radius: 4px;
     width: auto;
@@ -142,7 +149,10 @@ ul.list_car li:hover img{
     border-radius: 4px;
 }
 .product_body{
-    background-color: #302e2e;
+    /* background-color: #302e2e; */
+    /* background-image: radial-gradient(#330b43,#160931); */
+    background-color: transparent;
+
     width: 100%;
     padding-bottom: 15px;
 
@@ -210,6 +220,8 @@ ul.list_car li:hover img{
     display: flex;
     justify-content: center;
     background-color: transparent;
+    /* background-image: radial-gradient(#330b43,#160931); */
+
     color: #ccc;
     height: 20px;
     width: 30%;
