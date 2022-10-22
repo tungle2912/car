@@ -1,7 +1,8 @@
 
 
 .infor__list{
-    background-image: linear-gradient(to bottom right,#8289f4,#7F6EB2);
+    background-image: linear-gradient(to bottom ,#8f95e8,#bc9abc);
+    /* background-color: #ffffff; */
     width: 80vw;
     height: 90vh;
     overflow: hidden;
@@ -208,7 +209,10 @@
 .ferrari_488_spider.open,
 .ferrari_laferrari.open,
 .ferrari_roma_red.open,
-.ferrari_488_gtb_red.open
+.ferrari_488_gtb_red.open,
+.porsche_taycan.open,
+.rolls_royce_cullinan_black_badge.open,
+.mclaren_570s_spider_red.open
 {
     display: flex;
 }
