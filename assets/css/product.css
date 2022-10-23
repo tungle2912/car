@@ -140,7 +140,7 @@ ul.list_car li a{
 }
 ul.list_car li a img{
     max-width: 20vw;
-    max-height: 25vh;
+    max-height: 24vh;
     border-radius: 4px;
     width: auto;
     height: auto;
@@ -152,7 +152,7 @@ ul.list_car li a img{
     padding-top: 0;
 }
 .fix.list_car li a img{
-    max-height: 25vh;
+    /* max-height: 25vh; */
 }
 .product_show{
     position: absolute;
