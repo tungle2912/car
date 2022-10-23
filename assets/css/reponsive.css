@@ -203,17 +203,22 @@
         height: 55vh;
      }
      .tragop__container {
-        height: 65vh;
+        height: 85vh;
+        width: 90vw;
+        top: 45%;
      }
      .form-tragop-content .row{
         display: flex;
         flex-direction: column;
      }
      .nav-tintuc{
-        height: 65vh;
+        padding-left: 5px;
+        height: 85vh;
+        width: 90vw;
+        left: 53%;
      }
      .tintuc-container{
-        height: 65vh;
+        height: 85vh;
      }
      .car{
         display: flex;
@@ -247,10 +252,12 @@
         width: 95vw;
     }
     .infor__container{
-        padding-bottom: 10px;
+        padding: 20px 0;
         padding-left: 5px;
+        padding-bottom: 100px;
         flex-direction: column-reverse;
-        overflow: scroll;
+        overflow-y: scroll;
+        margin-bottom: 20px;
     }
     .infor__slider{
         width: 100%;
