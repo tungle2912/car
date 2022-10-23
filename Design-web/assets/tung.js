@@ -58,9 +58,41 @@ const menuOpen=document.querySelector('.js-menu');
          menuClose.addEventListener('click',closeMenu)
 
 
-    //open and close login
-    const login = document.querySelector('.js-login');
-    const register=document.querySelector('.js-register');
+         //login and register
+             const options=document.querySelectorAll('.changetype');
+             const form=document.getElementById("form");
+             const bgactive=document.getElementById("bg-active");
+             const registerid=document.getElementById("register");
+             const loginid=document.getElementById("login");
+         
+             for(const option of options){
+                 option.addEventListener('click',function(event){
+                     
+                       form.classList.remove('login');
+                     form.classList.remove('register');
+                     form.classList.add(this.id);
+                     bgactive.style.left=this.offsetLeft+'px'
+                     for(const op of options){
+                         op.classList.remove('active');
+         
+                     }
+                     this.classList.add('active')
+                 })
+             }
+             function removelogin(){
+                 form.classList.remove('login');
+                 form.classList.add('register');
+                 account.classList.add('open');
+                 logincontainer.classList.add('open');
+                 bgactive.style.left=registerid.offsetLeft+'px'
+             }
+         
+             
+             
+             
+             //open and close login
+    const logins = document.querySelectorAll('.js-login');
+    const registers=document.querySelectorAll('.js-register');
     const account = document.querySelector('.js-account');
     const logincontainer = document.querySelector('.js-account__container')  
     const closeLogin = document.querySelector('.js-login-close');
@@ -72,21 +104,21 @@ const menuOpen=document.querySelector('.js-menu');
     const closetintuc=document.querySelector('.js-tintuc-close');
     function showaccount(){
         account.classList.add('open');
-         }
-         function loginClose(){
+    }
+    function loginClose(){
         account.classList.remove('open');
         logincontainer.classList.remove('open'); 
-         }
-        function showLogin(){
+    }
+    function showLogin(){
         logincontainer.classList.add('open');
-        }
-        function showtragop(){
+    }
+    function showtragop(){
         tragopcontainer.classList.add('open');
-        }
-        function showtintuc(){
+    }
+    function showtintuc(){
         tintuccontainer.classList.add('open');
-        }
-
+    }
+    
     closetragop.addEventListener('click', function(){
         tragopcontainer.classList.remove('open');
         account.classList.remove('open');
@@ -99,10 +131,23 @@ const menuOpen=document.querySelector('.js-menu');
     tragop.addEventListener('click',showtragop);
     tintuc.addEventListener('click',showaccount);
     tintuc.addEventListener('click',showtintuc);
+    for(const login of logins){
+        login.addEventListener('click',showaccount);
+        login.addEventListener('click',closeMenu);
+        login.addEventListener('click',showLogin);
+        login.addEventListener('click',function(e){
+            form.classList.add('login');
+            form.classList.remove('register');
+            bgactive.style.left=loginid.offsetLeft+'px'
+            
+    })
+}
+for(const register of registers){
     register.addEventListener('click',closeMenu);
-    login.addEventListener('click',showaccount);
-    login.addEventListener('click',closeMenu);
-    login.addEventListener('click',showLogin);
+    register.addEventListener('click',removelogin)
+    
+}
+
     closeLogin.addEventListener('click',loginClose);
     
 
@@ -114,42 +159,6 @@ const menuOpen=document.querySelector('.js-menu');
 
 
  
-//login and register
-    const options=document.querySelectorAll('.changetype');
-    const form=document.getElementById("form");
-    const bgactive=document.getElementById("bg-active");
-    const registerid=document.getElementById("register");
-    const loginid=document.getElementById("login");
-
-    for(const option of options){
-        option.addEventListener('click',function(event){
-            
-              form.classList.remove('login');
-            form.classList.remove('register');
-            form.classList.add(this.id);
-            bgactive.style.left=this.offsetLeft+'px'
-            for(const op of options){
-                op.classList.remove('active');
-
-            }
-            this.classList.add('active')
-        })
-    }
-    function removelogin(){
-        form.classList.remove('login');
-        form.classList.add('register');
-        account.classList.add('open');
-        logincontainer.classList.add('open');
-        bgactive.style.left=registerid.offsetLeft+'px'
-    }
-
-    login.addEventListener('click',function(e){
-        form.classList.add('login');
-        form.classList.remove('register');
-        bgactive.style.left=loginid.offsetLeft+'px'
-
-    })
-    register.addEventListener('click',removelogin)
 
 // change type tintuc
 const changes=document.querySelectorAll('.change');

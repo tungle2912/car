@@ -412,7 +412,7 @@
     from {
         transform: translate(100%,-101%);
     }to{
-        transform: translate(-8%,-101%);
+        transform: translate(-7%,-101%);
     }
 }
 @keyframes outContents {
@@ -600,6 +600,10 @@
 }
 .video-tt .tilte-2 p:hover {
     color: aqua;
+}
+.tilte-2,.time{
+   padding-left: 25px;
+   width: 20vw;
 }
 
 

@@ -2,7 +2,7 @@
 
 .infor__list{
     background-image: linear-gradient(to bottom ,#8f95e8,#bc9abc);
-    /* background-color: #ffffff; */
+    /* background-color: #fff; */
     width: 80vw;
     height: 90vh;
     overflow: hidden;
@@ -40,6 +40,7 @@
 .infor__slider > img{
     border-radius: 5px;
     width: 90%;
+    height: 40vh;
     margin-right: 50px;
     margin: 0 10px;
     box-shadow: 2px 5px 9px 5px rgb(136, 133, 133);
