@@ -69,6 +69,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
     background-color: transparent;
 
     /* font-family: MBCorpo Title,sans-serif; */
@@ -139,11 +140,13 @@ ul.list_car li a{
     height: 100%;
 }
 ul.list_car li a img{
-    max-width: 20vw;
-    max-height: 24vh;
+    /* max-width: 20vw;
+    max-height: 24vh; */
     border-radius: 4px;
-    width: auto;
-    height: auto;
+    /* width: auto;
+    height: auto; */
+    width: 100%;
+    height: 150px;
     object-fit: cover;
     transition: all 0.3s ease-in-out;
    
