@@ -153,10 +153,10 @@
     .list_car li a{
         height: 100%;
     }
-    .product_img{
+    /* .product_img{
         max-width: 100%!important;
         max-height: 400px!important;
-    }
+    } */
     .product_buy_btn{
         width: 42vw;
     }
@@ -180,10 +180,10 @@
     .product_list{
         grid-template-columns: auto;
     }
-    .product_img{
+    /* .product_img{
         max-width: 100%!important;
         max-height: 500px!important;
-    }
+    } */
     footer{
         padding-left: 20px;
     }
