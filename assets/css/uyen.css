@@ -521,7 +521,7 @@
 .tilte-1 a, .tilte-2 a {
     text-decoration: none;
     color: black;
-
+    font-size: large;
 }
 .tilte-1 a:hover, .tilte-2 a:hover {
     color: aqua;

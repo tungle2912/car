@@ -15,6 +15,15 @@ function showSlides() {
 }
 
 
+const goToTopBtn = document.querySelector('.go-to-top');
+window.onscroll = function() {
+    const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+    if (scrollTop > 120) {
+        goToTopBtn.classList.add('active');
+    } else {
+        goToTopBtn.classList.remove('active');
+    }
+};
 
 // <!-- open and close search -->
 
@@ -41,8 +50,8 @@ modalClode.addEventListener('click',closeBtnSearch)
 
 
 
-
-const menuOpen=document.querySelector('.js-menu');
+//open and close menu
+   const menuOpen=document.querySelector('.js-menu');
     const menu=document.querySelector('.js-menu-modal');
     const menuClose=document.querySelector('.js-close');
 
@@ -177,15 +186,6 @@ for(const change of changes){
 
 
 
-const goToTopBtn = document.querySelector('.go-to-top');
-window.onscroll = function() {
-    const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-    if (scrollTop > 120) {
-        goToTopBtn.classList.add('active');
-    } else {
-        goToTopBtn.classList.remove('active');
-    }
-};
 
 
 // click img
