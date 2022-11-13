@@ -455,7 +455,16 @@
     padding: 10px;
     box-shadow: 1px 1px lightsteelblue;
 }
-
+.bgactive{
+    position: absolute;
+    width: 28%;
+    left: 0;
+    transition: 1s;
+    background-color: #6379e2;
+    height: 40px;
+    z-index: -1;
+    border-radius: 20px;
+}
 .form-choice ul li{
     padding-top: 8px;
     margin-bottom: 10px;
@@ -474,15 +483,7 @@
     color: #ccc;
 }
 
-.video:hover {
-    background-color:#ccc;
-}
-.trangchu:hover {
-    background-color:#ccc;
-}
-.muckhac:hover{
-    background-color: #ccc;
-}
+
 .tintuc-xe .form-content-tintuc {
     /* width: 70%; */
     height: calc(90vh - 56px);

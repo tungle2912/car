@@ -152,7 +152,7 @@
 
 
 
-.lamborghini_gallardo_spyder.open,
+/* .lamborghini_gallardo_spyder.open,
 .lamborghini_avendator_svj.open,
 .lamborghini_huracan_performante.open,
 .lamborghini_reventon.open,
@@ -216,6 +216,9 @@
 .rolls_royce_cullinan_black_badge.open,
 .mclaren_570s_spider_red.open
 {
+    display: flex;
+} */
+.infor__list.open{
     display: flex;
 }
 

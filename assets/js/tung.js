@@ -2,6 +2,7 @@
 var slideIndex = 0;
 showSlides();
 
+
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("slider__list");
@@ -342,18 +343,3 @@ for(const btnrollsroyce of btnrollsroyces){
 
     })
 }
-// reponsive
-const navMobileBtn = document.querySelector('.js-mobile-btn')
-const mobileMenu = document.querySelector('.js-mobile-menu')
-var mobileOverlay = document.querySelector('.mobile-menu-overlay')
-
-navMobileBtn.onclick=function(){
-    mobileMenu.style.transform="scaleY(1)";
-    mobileOverlay.style.display="block";
-}
-
-mobileOverlay.onclick=function(){
-    mobileMenu.style.transform="scaleY(0)";
-    mobileOverlay.style.display="none";
-}
-
