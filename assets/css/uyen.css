@@ -412,7 +412,7 @@
     from {
         transform: translate(100%,-101%);
     }to{
-        transform: translate(-7%,-101%);
+        transform: translate(-8%,-101%);
     }
 }
 @keyframes outContents {
@@ -458,7 +458,7 @@
 .bgactive{
     position: absolute;
     width: 28%;
-    left: 0;
+    left: 18%;
     transition: 1s;
     background-color: #6379e2;
     height: 40px;

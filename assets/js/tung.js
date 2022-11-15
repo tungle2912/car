@@ -343,3 +343,109 @@ for(const btnrollsroyce of btnrollsroyces){
 
     })
 }
+
+function validator(ops){
+
+        function validate (inputelement,rule){
+             var errormessage=rule.test(inputelement.value);     //lay ra gia tri undefined or string 
+             var errortext=inputelement.parentElement.querySelector(ops.error); //lấy ra form message
+                if(errormessage){                                  // nếu có lỗi (!undefined)
+                  errortext.innerText = errormessage;
+                  inputelement.parentElement.classList.add("red");
+                }else{
+                    errortext.innerText ="";
+                    inputelement.parentElement.classList.remove("red");
+                }
+
+                return !errormessage;
+        }
+
+        var formelement=document.querySelector(ops.form) // lấy ra form 
+        if(ops.rules){   
+            
+
+            formelement.onsubmit = function(e){  // hành động submit
+            e.preventDefault();   
+            
+            var isvalid= true;
+            ops.rules.forEach(function(rule){      //lặp qua các input
+            var inputelement=formelement.querySelector(rule.selector); // lay ra input 
+            var  valid=validate(inputelement,rule);   
+            
+                if(!valid){
+                    isvalid=false;
+                }
+
+            });
+            if(isvalid){
+               if(typeof ops.onSubmit==='function'){
+                var enableinput=formelement.querySelectorAll('[name]');
+
+                var formvalues=Array.from(enableinput).reduce(function(values,input){
+                    return (values[input.name]=input.value) && values;
+                },{});
+                
+         
+
+
+                ops.onSubmit(formvalues);
+               }
+            }
+
+
+           }
+            ops.rules.forEach(function(rule){
+            var inputelement=formelement.querySelector(rule.selector); // lay ra input 
+          
+
+            if(inputelement){                     
+            // xử lý th blur
+            inputelement.onblur = function (){          
+               validate(inputelement,rule)            //gọi ham ktra 
+            } 
+
+            // xử lý mỗi khi nhập
+            inputelement.oninput=function (){
+            var errortext=inputelement.parentElement.querySelector(ops.error);
+
+                errortext.innerText ="";
+                inputelement.parentElement.classList.remove("red");
+            }
+
+
+
+            }
+            });
+        }
+}
+validator.isemail=function(selector){
+    return{
+        selector:selector,
+        test: function(value){
+            var regex= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            return regex.test(value) ? undefined : "vui lòng nhập email"
+         }
+        
+    }
+}
+
+validator.ispassword=function(selector,min){
+    return{
+        selector:selector,
+        test: function(value){
+            return value.length>=min ? undefined : 'vui lòng  nhập tối thiểu 8 ký tự '
+        }
+        
+    }
+}
+
+validator.isconfirmed=function(selector,getvalue,ms){
+    return{
+        selector:selector,
+        test: function(value){
+           return value === getvalue() ? undefined : ms || 'giá trị không chính xác'
+        }
+        
+    }
+}
+

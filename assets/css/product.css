@@ -154,9 +154,9 @@ ul.list_car li a img{
 .product_img:nth-child(1){
     padding-top: 0;
 }
-.fix.list_car li a img{
-    /* max-height: 25vh; */
-}
+/* .fix.list_car li a img{
+     max-height: 25vh; 
+} */
 .product_show{
     position: absolute;
     display: inline-block;
