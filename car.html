@@ -217,7 +217,7 @@
 
                      <!-- start bar -->
                      <div class="info__item">
-                        <i class="js-menu info__icon fa-solid fa-bars"></i>
+                        <i class="js-menu info__icon fix fa-solid fa-bars"></i>
                     </div>
 
 
@@ -286,33 +286,23 @@
         </header>
         <!-- end header -->
         <div class="slider">
-            <!-- <div class="slider__list fade">
-                <img src="https://www.supercars.net/blog/wp-content/uploads/2021/07/2022-Lamborghini-Aventador-LP780-4-Ultimae-005-2160-2048x1152.jpg" alt="" class="slider__img mySlides-img">
-            </div> -->
-
-          
-
-
-            <div class="slider__list fade">
-                <img src="./assets/img/slider/slider-8.jpg" alt="" class="slider__img mySlides-img">
-            </div>
-
-            <div class="slider__list fade">
-                <img src="./assets/img/slider/slider-5.png" alt="" class="slider__img mySlides-img">
-            </div>
-            <div class="slider__list fade">
-                <img src="https://www.supercars.net/blog/wp-content/uploads/2021/07/2022-Lamborghini-Aventador-LP780-4-Ultimae-Roadster-008-2160-2048x1152.jpg" alt="" class="slider__img mySlides-img">
-            </div>
-            <div class="slider__list fade">
-                <img src="./assets/img/slider/slider-9 (2).jpg" alt="" class="slider__img mySlides-img">
-            </div>
-
             
 
+            <div class="slider__list">
+                <img src="./assets/img/slider/slider-8.jpg" alt="" class="slider__img ">
+            </div>
 
+            <div class="slider__list">
+                <img src="./assets/img/slider/slider-5.png" alt="" class="slider__img ">
+            </div>
+            <div class="slider__list">
+                <img src="https://www.supercars.net/blog/wp-content/uploads/2021/07/2022-Lamborghini-Aventador-LP780-4-Ultimae-Roadster-008-2160-2048x1152.jpg" alt="" class="slider__img ">
+            </div>
+            <div class="slider__list">
+                <img src="./assets/img/slider/slider-9 (2).jpg" alt="" class="slider__img ">
+            </div>
 
-
-
+        
         </div>
         <div class="container">
             <h3 class ="product__text" id="sanpham">PRODUCT</h3>
@@ -1434,14 +1424,18 @@
                 </div>
                 <div class="login-container js-login-container">
                     <div class="form login" id="form">
-                        <div class="content">
+                        <form action=""  onsubmit="return false" class="content" id="form-1">
                             <h1>Login</h1>
                             <div class="group">
-                                <input type="text" class="input-text" placeholder="Username " required>
+                                <label for="email">Username </label>
+                                <input id="email" type="text" name="email" class="input-text" placeholder="Eg:tung123@gmail.com" >
+                                <span class="form_message"></span>
                             </div>
                             
                             <div class="group">
-                                <input type="text" class="input-text" placeholder="Password" required>
+                                <label for="Password">Password </label>
+                                <input id="Password" type="password" name="Password" class="input-text" placeholder="Enter Password" >
+                                <span class="form_message"></span>
                             </div>
                             
                             <!-- <div class="group">
@@ -1454,32 +1448,27 @@
                             </div>
                             
                             <button>Login</button>
-                            <!-- <div class="group-2">
-                                <div class="group-2__item ">
-                                    <i class=" group-2__icon fa-brands fa-facebook"></i>
-                                    <p class="group-2__text">Kết nối với Facebook</p>
-                                </div>
-                                <div class="group-2__item">
-                                    <i class="group-2__icon group-2__icon-2 fa-brands fa-google"></i>
-                                    <p class="group-2__text">Kết nối với Google</p>
-                                </div>
-                                
-                                
-                            </div> -->
+                       
                             
-                        </div>
-                        <div class="content">
+                        </form>
+                        <form  onsubmit="return false" class="content" id="form-2">
                             <h1>Register</h1>
                             <div class="group">
-                                <input type="email" class="input-text" placeholder="Username" required>
+                                <label for="email">Username </label>
+                                <input  id="email" type="text" name="email" class="input-text" placeholder="Eg:tung123@gmail.com" >
+                                <span class="form_message"></span>
                             </div>
                             
                             <div class="group">
-                                <input type="text" class="input-text" placeholder="Password" required>
+                                <label for="Password">Password </label>
+                                <input id="Password" type="password" name="Password" class="input-text" placeholder="Enter Password" >
+                                <span class="form_message"></span>
                             </div>
             
                             <div class="group hide-on-mobile">
-                                <input type="text" class="input-text" placeholder="Enter your Password" required>
+                                <label for="Password-1">Enter your Password </label>
+                                <input id="Password-1"type="password" name="Password-1" class="input-text" placeholder="Enter Password" >
+                                <span class="form_message"></span>
                             </div>
                             
                             <div class="group-save">
@@ -1490,7 +1479,7 @@
                             <button>Register</button>
                             
                             
-                        </div>
+                        </form>
                         
                         
                         
@@ -1786,11 +1775,11 @@
 
                         </div>
                         <div class="trangchu change" id="tintuc">
-                            <a href="#"><i class="fa-solid fa-house-user" ></i></a>
+                            <a ><i class="fa-solid fa-house-user" ></i></a>
         
                         </div>
                         <div class="video change" id="video">
-                            <a href="#"><i class="fa-solid fa-play" ></i></a>
+                            <a ><i class="fa-solid fa-play" ></i></a>
         
                         </div>
                         <div class="muckhac">
@@ -6495,6 +6484,39 @@
 
   
     <script src="./assets/js/tung.js"></script>
+
+    <script>
+     validator({
+        form:'#form-1',
+        error:'.form_message',
+        rules:[
+            validator.isemail('#email'),
+            validator.ispassword('#Password',8)
+        ],
+         onSubmit: function (data) {
+            // Call API
+            console.log(data);
+          }
+     })
+
+     validator({
+        form:'#form-2',
+        error:'.form_message',
+        rules:[
+            validator.isemail('#email'),
+            validator.ispassword('#Password',8),
+            validator.isconfirmed('#Password-1',function(){
+                return document.querySelector('#form-2 #Password').value;
+            },'mật khẩu nhập lại không chính xác ')
+        ],
+        onSubmit: function (data) {
+            // Call API
+            console.log(data);
+          }
+      
+     });
+
+    </script>
     
 </div>
  </body>
